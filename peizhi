@@ -159,8 +159,8 @@ final, Final
 # 本地服务器节点
 
 [server_remote]
-https://pub-api-1.bianyuan.xyz/sub?target=quanx&url=https%3A%2F%2Fv2.tjiasu.xyz%2Fapi%2Fv2%2Fclient%2Fsubscribe%3Ftoken%3D27c6e347c861047dbf9a3de8a9aeefb4%7Chttps%3A%2F%2Fsubscribe.a9b.top%2Flink%2FC9IPrky4dbo1BHsK%3Fsub%3D2&insert=false, tag=All, update-interval=172800, opt-parser=true, enabled=true
-# 服务器引用(订阅)，支持远程订阅地址和本地文件
+zanstg, [2021/11/13 22:31]
+https://v2.tjiasu.xyz/api/v2/client/subscribe?token=27c6e347c861047dbf9a3de8a9aeefb4, tag=T, update-interval=172800, opt-parser=false, enabled=true# 服务器引用(订阅)，支持远程订阅地址和本地文件
 [rewrite_remote]
 # 远程重写订阅
 # 包含主机名 hostname 以及复写 rewrite 规则
