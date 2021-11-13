@@ -173,7 +173,6 @@ https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/TestFlightDow
 https://github.com/app2smile/rules/raw/master/module/spotify.conf, tag=Spotify, update-interval=172800, opt-parser=false, enabled=true
 
 https://raw.githubusercontent.com/erdongchanyo/Rules/main/Quantumult%20X/AllinOneRewrite/edc.conf, tag=EDC-AllinOneRewrite, update-interval=86400, opt-parser=true, enabled=true
-https://raw.githubusercontent.com/erdongchanyo/Rules/main/Quantumult%20X/CookieGetRewrite/cookie_get.conf, tag=EDC-CookieGetRewrite, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rewrite/QuantumultX/AdvertisingLite/AdvertisingLite.conf, tag=AdvertisingLite(blackmatrix7, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rewrite/QuantumultX/AdvertisingScript/AdvertisingScript.conf, tag=AdvertisingScript(blackmatrix7, update-interval=172800, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/external/QuantumultX/TikTokUnlock/TikTokJP.conf, tag=TikTok Unlock(blackmatrix7, update-interval=86400, opt-parser=false, enabled=true
