@@ -1,6 +1,6 @@
 #自用配置,来源均为网络.
 [general]
-profile_img_url= https://raw.githubusercontent.com/zansgit/quanx/main/70ab0e6e32td6d8a06d.PNG
+profile_img_url= https://github.com/zansgit/quanx/blob/5443fd89847ccdf938d79471d9f5c2915e265439/70ab0e6e32td6d8a06d.PNG
 # server_check_url 
 # 对指定的网址进行相应测试，以确认节点的可用性
 server_check_url=http://www.qualcomm.cn/generate_204
