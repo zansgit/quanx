@@ -166,7 +166,7 @@ https://pub-api-1.bianyuan.xyz/sub?target=quanx&url=https%3A%2F%2Fv2.tjiasu.xyz%
 # update-interval 为更新时间参数，单位：秒, 默认更新时间为：24*60*60=86400 秒，也就是24小时
 # opt-parser=true/false 用于控制是否对订阅开启资源解析器，不写或者 false 表示不启用解析器
 https://github.com/VirgilClyne/iRingo/blob/main/qxrewrite/Siri_Suggestions.qxrewrite?raw=true, tag=Siri, update-interval=172800, opt-parser=false, enabled=true
-
+https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/TestFlightDownload.conf, tag=Testflight, update-interval=172800, opt-parser=false, enabled=true
 https://github.com/app2smile/rules/raw/master/module/spotify.conf, tag=Spotify, update-interval=172800, opt-parser=false, enabled=true
 
 https://raw.githubusercontent.com/erdongchanyo/Rules/main/Quantumult%20X/AllinOneRewrite/edc.conf, tag=EDC-AllinOneRewrite, update-interval=86400, opt-parser=true, enabled=true
