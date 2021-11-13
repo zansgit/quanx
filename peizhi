@@ -1,10 +1,4 @@
-## “#”为注释符号，删除#号该行才会生效
-# 感谢各位大佬的教程让我学会了圈X的皮毛使用，就不在此逐一致谢了！
-# ------------------
-# YouTube：https://bit.ly/3bshXk6
-# Telegram：https://t.me/erdongchan
-# 图标库：https://github.com/erdongchanyo/icon
-# ------------------
+自用配置,来源均为网络.
 [general]
 # server_check_url 
 # 对指定的网址进行相应测试，以确认节点的可用性
