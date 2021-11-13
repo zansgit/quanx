@@ -160,7 +160,7 @@ final, Final
 
 [server_remote]
 
-https://v2.tjiasu.xyz/api/v2/client/subscribe?token=27c6e347c861047dbf9a3de8a9aeefb4, tag=T, update-interval=172800, opt-parser=false, enabled=true
+https://v2.tjiasu.xyz/api/v2/client/subscribe?token=27c6e347c861047dbf9a3de8a9aeefb4, tag=T, update-interval=172800, opt-parser=true, enabled=true
 
 # 服务器引用(订阅)，支持远程订阅地址和本地文件
 [rewrite_remote]
