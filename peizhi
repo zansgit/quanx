@@ -1,5 +1,6 @@
 自用配置,来源均为网络.
 [general]
+profile_img_url= https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/img/dragonball/1.PNG
 # server_check_url 
 # 对指定的网址进行相应测试，以确认节点的可用性
 server_check_url=http://www.qualcomm.cn/generate_204
