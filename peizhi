@@ -1,16 +1,4 @@
 #自用配置,来源均为网络.
-# Quantumult X小白配置 制作 by微信公众号：少年歌行PRO 2021/9/1重置中。
-# 重制版V0.01
-# Telegram资源发布群（禁言纯净）@shao66 
-# Telegram水友交流群（资源同步）@sngxpro
-# Telegram私聊群主 @shaogebot
-#脚本调用下列大佬的资源，在此致谢，排名不分先后
-#@nobyda @chavyleung @zzpiglet @songyangzz @toulanboy @sunert @peng-ym @iepngs @lowking @lxk0301 @vinewx @chouchoui @Orz-3 @ZhiYi-N @evilbutcher @yichahucha @id77 @photonmang @wangdelu2020 @Zero-S1 @ziye12 @barrym-chen @iisams @LJJJia @congcong0806 @XidNDD @passerby-b @photonmang
-
-#特别感谢Orz-3的图标项目 美化效果杠杠的
-
-#特别感谢faker2项目的不具名大佬脚本的备份
-
 [dns]
 no-ipv6
 server=119.29.29.29
@@ -28,11 +16,11 @@ udp_whitelist=53, 80-427, 444-65535
 
 [policy]
 #可选策略，默认不启用，如需启用，请去掉下行的#。
-#static=节点选择, 手动选择, 延迟最低, img-url=https://ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/none/Zero.png
+static=节点选择, 手动选择, 延迟最低, img-url=https://ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/none/Zero.png
 #可选策略，默认不启用，如需启用，请去掉下行的#。
-#static=手动选择, server-tag-regex=.*, img-url=https://ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/Manual.png
+static=手动选择, server-tag-regex=.*, img-url=https://ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/Manual.png
 #可选策略，默认不启用，如需启用，请去掉下行的#。
-#url-latency-benchmark=延迟最低, server-tag-regex=.*, check-interval=300, tolerance=0, img-url=https://ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/Urltest.png
+url-latency-benchmark=延迟最低, server-tag-regex=.*, check-interval=300, tolerance=0, img-url=https://ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/Urltest.png
 #可选策略，默认不启用，如需启用，请同时启用下方[filter]的网易云音乐分流、[server remote]的网易云节点订阅，三者不同时启用成功会报错。启用方法是删除下一行开头的#
 #选择本地节点中的网易云解锁灰色节点
 static=TikTok, proxy, img-url=https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/icons/main/genshin/diluke.png
