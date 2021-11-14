@@ -63,8 +63,9 @@ https://raw.githubusercontent.com/chavyleung/scripts/master/box/rewrite/boxjs.re
 https://raw.githubusercontent.com/w37fhy/QuantumultX/master/QuantumultX_JS.conf, tag=比价等脚本, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/w37fhy/QuantumultX/master/QuantumultX_Cookie.conf, tag=获取Cookie, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/app2smile/rules/master/module/spotify.conf, tag=Spotify, update-interval=172800, opt-parser=false, enabled=true
-
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rewrite/QuantumultX/AllInOne/AllInOne.conf, tag=Allone去广告, update-interval=172800, opt-parser=false, enabled=true
 [server_local]
+https://v2.tjiasu.xyz/api/v2/client/subscribe?token=27c6e347c861047dbf9a3de8a9aeefb4, tag=T, update-interval=172800, opt-parser=true, enabled=true
 
 #解锁网易云音乐节点
 http=106.52.127.72:19951, fast-open=false, udp-relay=false, tag= 解锁节点一
