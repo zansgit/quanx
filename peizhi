@@ -53,48 +53,32 @@ server=/*.netease.com/119.29.29.29
 server=/*testflight.apple.com/23.76.66.98
 
 [policy]
-## 策略组
-## 将分流规则传递过来的网络请求进行分发
-# 自动选择最优节点
-url-latency-benchmark=Auto-HK, server-tag-regex=港, check-interval=600, tolerance=0, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Auto.png
-# 服务器按地区分组策略
-# 美国
-static=US, server-tag-regex=美|美国|🇺🇸|US|us, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/US.png
-# 港
-static=HK, server-tag-regex=HK|香港|港|🇭🇰️, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/HK02.png
-# 日
-static= JP, server-tag-regex= 日|日本|东京|🇯🇵|JP, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/JP.png
-# 台湾
-static=TW, server-tag-regex=台|台湾|TW, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/TW02.png
-# 新
-static=SG, server-tag-regex=狮城|新|新加坡|🇸🇬|SG, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/SG.png
-# 国外连接策略
-static=Outside, US, SG, HK, TW, JP, Final, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Outside.png
-# 国外媒体策略
-static=GMedia, US, SG, HK, TW, JP, Final, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/GMedia.png
-# 国外媒体细分策略
-static=Netflix, US, SG, HK, TW, JP, Final, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Netflix.png
-static=Disney+, US, SG, HK, Final, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Disney+.png
-static=YouTube, US, SG, HK, TW, JP, Final, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Youtube.png
-static=Spotify, US, SG, HK, TW, JP, Final, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Spotify.png
-static=TikTok, US, SG, HK, TW, JP, Final, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Tiktok.png
-# 国内媒体细分策略
-static=Bilibili, HK, TW, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Bilibili.png
-static=iQiYi, TW, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Aiqiyi.png
-# 软件&服务策略
-static=Telegram, US, SG, HK, TW, JP, Final, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Telegram.png
-static=Twitter, US, SG, HK, TW, JP, Final, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Twitter.png
-static=TestFlight, US, SG, HK, TW, JP, Final, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/TestFlight.png
-static=Speedtest, US, SG, HK, TW, JP, Final, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Speedtest.png
-static=PayPal, direct, US, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Paypal.png
-static=Apple, US, SG, HK, TW, JP, Final, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Apple.png
-static=Google, US, SG, HK, TW, JP, Final, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Google.png
-static=Microsoft, US, HK, Final, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Microsoft.png
-# 国内连接策略
-static=Mainland, Final, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Mainland.png
-static=Advertising, reject, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/AdBlock.png
-# 最终策略：如果以上的策略均未被匹配到，则听从此策略组的规定
-static=Final, Auto-HK, US, proxy, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Final01.png
+#可选策略，默认不启用，如需启用，请去掉下行的#。
+#static=节点选择, 手动选择, 延迟最低, img-url=https://ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/none/Zero.png
+#可选策略，默认不启用，如需启用，请去掉下行的#。
+#static=手动选择, server-tag-regex=.*, img-url=https://ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/Manual.png
+#可选策略，默认不启用，如需启用，请去掉下行的#。
+#url-latency-benchmark=延迟最低, server-tag-regex=.*, check-interval=300, tolerance=0, img-url=https://ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/Urltest.png
+#可选策略，默认不启用，如需启用，请同时启用下方[filter]的网易云音乐分流、[server remote]的网易云节点订阅，三者不同时启用成功会报错。启用方法是删除下一行开头的#
+#选择本地节点中的网易云解锁灰色节点
+static=TikTok, proxy, img-url=https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/icons/main/genshin/diluke.png
+static=网易云音乐, 解锁节点一, 解锁节点二, 解锁节点三, img-url=https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/icons/main/genshin/wendi.png
+static=新加坡, server-tag-regex=(?=.*(新加坡|狮城|SG|(?i)Singapore))^((?!(专线|手游|游戏|(?i)IPLC|IEPL|game)).)*$, img-url=https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/icons/main/genshin/keli.png
+static=美国, server-tag-regex=(?=.*(美国|美國|US|(?i)States|American))^((?!(专线|手游|游戏|(?i)IPLC|IEPL|game)).)*$, img-url=https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/icons/main/genshin/anbo.png
+static=日本, server-tag-regex=(?=.*(日本|JP|(?i)Japan))^((?!(专线|手游|游戏|(?i)IPLC|IEPL|game)).)*$, img-url=https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/icons/main/genshin/keqing.png
+static=韩国, server-tag-regex=(?=.*(韩国|韓國|南朝鲜|KR|(?i)Korean))^((?!(专线|手游|游戏|(?i)IPLC|IEPL|game)).)*$, img-url=https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/icons/main/genshin/feixieer.png
+static=香港, server-tag-regex=(?=.*(香港|HK|(?i)Hong))^((?!(专线|手游|游戏|(?i)IPLC|IEPL|game)).)*$, img-url=https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/icons/main/genshin/xiangling.png
+static=台湾, server-tag-regex=(?=.*(台湾|台灣|TW|(?i)Taiwan))^((?!(专线|手游|游戏|(?i)IPLC|IEPL|game)).)*$, img-url=https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/icons/main/genshin/babala.png
+static=特殊, server-tag-regex=^((?!(专线|手游|游戏|香港|台湾|日本|新加坡|美国|韩国|狮城|南朝鲜|US|SG|JP|KR|HK|TW|台灣|美國|韓國|獅城|账号|试用|流量|电报|网址|最新|域名|剩余|(?i)IPLC|IEPL|game|States|American|Singapore|Japan|Korea|Hong|Taiwan|data|date|website)).)*$, img-url=https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/icons/main/genshin/mona.png
+static=IPLC, server-tag-regex=(手游|游戏|专线|(?i)IPLC|IEPL|game), img-url=https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/icons/main/genshin/shatang2.png
+static=苹果服务, direct, 美国, 香港, proxy, img-url=https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/icons/main/genshin/qiqi.png
+static=全球加速, proxy, 美国, 新加坡, 日本, 韩国, 香港, 台湾, 特殊, IPLC, direct, img-url=https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/icons/main/genshin/ganyu.png
+static=港台番剧, direct, 香港, 台湾, proxy, img-url=https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/icons/main/genshin/diaona.png
+static=国际媒体, proxy, 美国, 新加坡, 日本, 韩国, 香港, 台湾, 特殊, direct, img-url=https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/icons/main/genshin/qin.png
+static=声田音乐, proxy, 美国, 香港, 日本, direct, img-url=https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/icons/main/genshin/beidou.png
+static=网飞影视, proxy, 新加坡, 香港, 台湾, direct, img-url=https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/icons/main/genshin/lisha.png
+static=电报代理, proxy, direct, 新加坡, IPLC, img-url=https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/icons/main/genshin/ningguang.png
+static=黑白名单, proxy, direct, 美国, 新加坡, 日本, 韩国, 香港, 台湾, 特殊, IPLC, img-url=https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/icons/main/genshin/nvshi.png
 [filter_remote]
 ## 远程分流规则订阅
 ## 将网络请求进行分流，网络请求的走向(是否能成功访问)由匹配到的策略组决定
