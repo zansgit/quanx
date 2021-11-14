@@ -31,6 +31,7 @@ static=🐟 漏网之鱼, 🚀 节点选择, ♻️ 自动选择, 🇭🇰 香�
 [server_remote]
 
 [filter_remote]
+https://github.com/VirgilClyne/iRingo/blob/main/RuleSet/Apple_News_for_Quantumult_X.list?raw=true, tag=Apple News, force-policy= 美国, update-interval=172800, opt-parser=false, enabled=true
 # 网易云分流
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/NetEaseMusic/NetEaseMusic.list, tag=🙈 网易云音乐, force-policy=🙈 网易云音乐, enabled=true
 # Unbreak 后续规则修正
@@ -53,6 +54,11 @@ https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter
 https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/Extra/ChinaIP.list, tag=🎯中国IP-直连, update-interval=86400, opt-parser=false , enabled=true
 
 [rewrite_remote]
+https://github.com/VirgilClyne/iRingo/blob/main/qxrewrite/Apple_News.qxrewrite?raw=true, tag=Apple News, update-interval=172800, opt-parser=false, enabled=true
+https://github.com/VirgilClyne/iRingo/blob/main/qxrewrite/Apple_Maps_CN.qxrewrite?raw=true, tag=Apple maps, update-interval=172800, opt-parser=false, enabled=true
+https://github.com/VirgilClyne/iRingo/blob/main/qxrewrite/Siri_Suggestions.qxrewrite?raw=true, tag=Siri与搜索, update-interval=172800, opt-parser=false, enabled=true
+https://github.com/VirgilClyne/iRingo/blob/main/qxrewrite/Geo_Services.qxrewrite?raw=true, tag=定位服务, update-interval=172800, opt-parser=false, enabled=true
+https://github.com/VirgilClyne/iRingo/blob/main/qxrewrite/Apple_Weather.qxrewrite?raw=true, tag=天气, update-interval=172800, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/chavyleung/scripts/master/box/rewrite/boxjs.rewrite.quanx.tf.conf, tag=Boxjs, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/w37fhy/QuantumultX/master/QuantumultX_JS.conf, tag=比价等脚本, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/w37fhy/QuantumultX/master/QuantumultX_Cookie.conf, tag=获取Cookie, update-interval=86400, opt-parser=false, enabled=true
