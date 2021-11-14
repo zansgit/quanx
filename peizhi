@@ -1,56 +1,31 @@
 #自用配置,来源均为网络.
-[general]
-profile_img_url= https://github.com/zansgit/quanx/blob/610584277ce5f30d2e271c4fae5346786b80bdc3/head.png
+# Quantumult X小白配置 制作 by微信公众号：少年歌行PRO 2021/9/1重置中。
+# 重制版V0.01
+# Telegram资源发布群（禁言纯净）@shao66 
+# Telegram水友交流群（资源同步）@sngxpro
+# Telegram私聊群主 @shaogebot
+#脚本调用下列大佬的资源，在此致谢，排名不分先后
+#@nobyda @chavyleung @zzpiglet @songyangzz @toulanboy @sunert @peng-ym @iepngs @lowking @lxk0301 @vinewx @chouchoui @Orz-3 @ZhiYi-N @evilbutcher @yichahucha @id77 @photonmang @wangdelu2020 @Zero-S1 @ziye12 @barrym-chen @iisams @LJJJia @congcong0806 @XidNDD @passerby-b @photonmang
 
-# server_check_url 
-# 对指定的网址进行相应测试，以确认节点的可用性
-server_check_url=http://www.qualcomm.cn/generate_204
-# 资源解析器
-resource_parser_url= https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/resource-parser.js
-# geo_location_checker
-# 用于节点页面的信息展示，可完整自定义
-geo_location_checker=http://ip-api.com/json/?lang=zh-CN, https://github.com/KOP-XIAO/QuantumultX/raw/master/Scripts/IP_API.js
-# dns_exclusion_list
-# list中的域名将不使用fake-ip方式, 多个域名用“, ”连接。其它域名则全部采用 fake-ip及远程解析的模式
-dns_exclusion_list = *.localnetwork.uop, *.qq.com, qq.com
-# 下列表中内容将不经过 QuantumultX 的处理
-excluded_routes=192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, 17.0.0.0/8
-icmp_auto_reply=true
+#特别感谢Orz-3的图标项目 美化效果杠杠的
+
+#特别感谢faker2项目的不具名大佬脚本的备份
+
 [dns]
-# DoH服务器(DNS over HTTPS)以加密的HTTPS协议进行DNS解析请求，避免原始DNS协议中用户的DNS解析请求被窃听或者修改的问题（例如中间人攻击）来达到保护用户隐私的目的
-# 设置DoH服务器后，所有其他常规DNS服务器设置将被忽略；当设置了多个DoH服务器时，只会使用第一个；当使用的 DoH服务器不是基于HTTP/2时，DoH将被暂时禁用。
-
-# DNS.SB
-;doh-server=https://doh.dns.sb/dns-query
-# IIJ DNS
-;doh-server=https://public.dns.iij.jp/dns-query
-# 红鱼DNS
-;doh-server=https://rubyfish.cn/dns-query
-# 阿里DNS
-doh-server=https://dns.alidns.com/dns-query
-
-# 常规DNS服务器
+no-ipv6
 server=119.29.29.29
-server=119.28.28.28
-server=182.254.116.116
-server=1.2.4.8
-server=223.5.5.5
-server=114.114.114.114
-server=202.141.176.93 
-server=202.141.178.13
-server=117.50.10.10
-# 制定域名解析 dns
-server=/*.taobao.com/223.5.5.5
-server=/*.tmall.com/223.5.5.5
-server=/*.alipay.com/223.5.5.5
-server=/*.aliyun.com/223.5.5.5
-server=/*.jd.com/119.28.28.28
-server=/*.qq.com/119.28.28.28
-server=/*.tencent.com/119.28.28.28
-server=/*.weixin.com/119.28.28.28
-server=/*.bilibili.com/119.29.29.29
-server=/*.netease.com/119.29.29.29
-server=/*testflight.apple.com/23.76.66.98
+address=/mtalk.google.com/108.177.125.188
+
+[general]
+profile_img_url= 
+server_check_url=http://bing.com/
+dns_exclusion_list=*.cmpassport.com, *.jegotrip.com.cn, *.icitymobile.mobi, id6.me, *.icitymobile.mobi, *.pingan.com.cn, *.cmbchina.com, *.localnetwork.uop, mfs.ykimg.com*.ttf
+geo_location_checker=http://ip-api.com/json/?lang=zh-CN, https://ghproxy.com/https://raw.githubusercontent.com/Orz-3/QuantumultX/master/IP.js
+resource_parser_url=https://ghproxy.com/https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/resource-parser.js
+profile_img_url=https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/QuanX/master/icons/wangzhe/bailishouyue.png
+fallback_udp_policy=direct
+udp_whitelist=53, 80-427, 444-65535
+
 
 [policy]
 #可选策略，默认不启用，如需启用，请去掉下行的#。
@@ -79,97 +54,167 @@ static=声田音乐, proxy, 美国, 香港, 日本, direct, img-url=https://ghpr
 static=网飞影视, proxy, 新加坡, 香港, 台湾, direct, img-url=https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/icons/main/genshin/lisha.png
 static=电报代理, proxy, direct, 新加坡, IPLC, img-url=https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/icons/main/genshin/ningguang.png
 static=黑白名单, proxy, direct, 美国, 新加坡, 日本, 韩国, 香港, 台湾, 特殊, IPLC, img-url=https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/icons/main/genshin/nvshi.png
-[filter_remote]
-## 远程分流规则订阅
-## 将网络请求进行分流，网络请求的走向(是否能成功访问)由匹配到的策略组决定
-# 部分规则有先后顺序要求，调整顺序可能失效
-# Speedtest规则
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Speedtest/Speedtest.list, tag=Speedtest 规则, force-policy=Speedtest, update-interval=86400, opt-parser=false, enabled=true
-# Netflix规则
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Netflix/Netflix.list, tag=Netflix 规则, force-policy=Netflix, update-interval=86400, opt-parser=false, enabled=true
-# Disney规则
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Disney/Disney.list, tag=Disney, force-policy=Disney+, update-interval=172800, opt-parser=true, enabled=true
-# Spotify规则
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Spotify/Spotify.list, tag=Spotify 规则, force-policy=Spotify, update-interval=86400, opt-parser=false, enabled=true
-# Youtube规则
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX//YouTube/YouTube.list, tag=YouTube 规则, force-policy=YouTube, update-interval=86400, opt-parser=false, enabled=true
-# Tiktok规则
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/TikTok/TikTok.list, tag=TikTok 规则, force-policy=TikTok, update-interval=86400, opt-parser=false, enabled=true
-# 出国媒体规则
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/GlobalMedia/GlobalMedia.list, tag=GMedia 规则, force-policy=GMedia, update-interval=86400, opt-parser=false, enabled=true
-# Telegram规则
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Telegram/Telegram.list, tag=Telegram 规则, force-policy=Telegram, update-interval=86400, opt-parser=false, enabled=true
-# Paypal规则
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/PayPal/PayPal.list, tag=PayPal 规则, force-policy=PayPal, update-interval=86400, opt-parser=false, enabled=true
-# Microsoft规则
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Microsoft/Microsoft.list, tag=Microsoft 规则, force-policy=Microsoft, update-interval=86400, opt-parser=false, enabled=true
-# Twitter规则
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Twitter/Twitter.list, tag=Twitter规则, force-policy=Twitter, update-interval=86400, opt-parser=false, enabled=true
-# Google规则
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Google/Google.list, tag=Google规则, force-policy=Google, update-interval=86400, opt-parser=false, enabled=true
-# testflight规则
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/TestFlight/TestFlight.list, tag=TestFlight, force-policy=TestFlight, update-interval=86400, opt-parser=false, enabled=true
-# Apple规则
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Apple/Apple.list, tag=Apple 规则, force-policy=Apple, update-interval=86400, opt-parser=false, enabled=true
-# 出国总规则
-https://raw.githubusercontent.com/GeQ1an/Rules/master/QuantumultX/Filter/Outside.list, tag=Outside 规则, force-policy=Outside, update-interval=86400, opt-parser=false, enabled=true
-# 国内媒体规则
-# Bilibili
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/BiliBili/BiliBili.list, tag=Bilibili, force-policy=Bilibili, update-interval=172800, opt-parser=false, enabled=true
-# iQiYi
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/iQIYI/iQIYI.list, tag=iQiYi, force-policy=iQiYi, update-interval=172800, opt-parser=false, enabled=true
-# 国内总规则
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/China/China.list, tag=Mainland 规则, force-policy=Mainland, update-interval=86400, opt-parser=false, enabled=true
-# 去广告规则
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Advertising/Advertising.list, tag=Advertising, force-policy=Advertising, update-interval=172800, opt-parser=false, enabled=true
-[filter_local]
-# 本地分流规则:相同规则下本地规则优先生效
-# 绕过企业证书过期
-host, ocsp.apple.com, reject
-# 其它
-host-suffix, local, direct
-# 新版抖音本地分流
-host-suffix, snssdk.com, direct
-host-suffix, amemv.com, direct
-ip-cidr, 10.0.0.0/8, direct
-ip-cidr, 17.0.0.0/8, direct
-ip-cidr, 100.64.0.0/10, direct
-ip-cidr, 127.0.0.0/8, direct
-ip-cidr, 172.16.0.0/12, direct
-ip-cidr, 192.168.0.0/16, direct
-geoip, cn, Mainland
-final, Final
-[server_local]
-# 本地服务器节点
+
+
 
 [server_remote]
+#公众号少年歌行PRO提示您：这个位置用于填写您的机场订阅地址（请回车另起一行）
 
-https://v2.tjiasu.xyz/api/v2/client/subscribe?token=27c6e347c861047dbf9a3de8a9aeefb4, tag=T, update-interval=172800, opt-parser=true, enabled=true
 
-# 服务器引用(订阅)，支持远程订阅地址和本地文件
+[filter_remote]
+https://ghproxy.com/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/Unbreak.list, tag=规则修正, update-interval=86400, opt-parser=false, enabled=true
+https://ghproxy.com/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/Guard/Advertising.list, tag=广告拦截, force-policy=reject, update-interval=86400, opt-parser=false, enabled=true
+https://ghproxy.com/https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/AdRule.list, tag=广告拦截, force-policy=reject, update-interval=86400, opt-parser=false, enabled=true
+https://ghproxy.com/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/Guard/Privacy.list, tag=隐私保护, force-policy=reject, update-interval=86400, opt-parser=false, enabled=true
+https://ghproxy.com/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/Guard/Hijacking.list, tag=运营劫持, force-policy=reject, update-interval=86400, opt-parser=false, enabled=true
+https://ghproxy.com/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/Extra/Telegram/Telegram.list, tag=电报代理, force-policy=电报代理, update-interval=86400, opt-parser=false, enabled=true
+https://ghproxy.com/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/StreamingMedia/Music/Spotify.list, tag=声田音乐, force-policy=声田音乐, update-interval=86400, opt-parser=false, enabled=true
+https://ghproxy.com/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/StreamingMedia/Video/Netflix.list, tag=网飞影视, force-policy=网飞影视, update-interval=86400, opt-parser=false, enabled=true
+https://ghproxy.com/https://raw.githubusercontent.com/Semporia/Quantumult-X/master/Filter/TikTok.list, tag=TikTok, force-policy=TikTok, update-interval=86400, opt-parser=false, enabled=true
+https://ghproxy.com/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/StreamingMedia/Video/Bahamut.list, tag=动画疯, force-policy=台湾, update-interval=86400, opt-parser=false, enabled=true
+https://ghproxy.com/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/StreamingMedia/Streaming.list, tag=国际媒体, force-policy=国际媒体, update-interval=86400, opt-parser=false, enabled=true
+https://ghproxy.com/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/StreamingMedia/StreamingSE.list, tag=港台番剧, force-policy=港台番剧, update-interval=86400, opt-parser=false, enabled=true
+https://ghproxy.com/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/Global.list, tag=全球加速, force-policy=全球加速, update-interval=86400, opt-parser=false, enabled=true
+https://ghproxy.com/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/Extra/Apple/AppStoreConnect.list, tag=苹果服务, force-policy=苹果服务, update-interval=86400, opt-parser=false, enabled=true
+https://ghproxy.com/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/Extra/Apple/AppStore.list, tag=苹果服务, force-policy=苹果服务, update-interval=86400, opt-parser=false, enabled=true
+https://ghproxy.com/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/China.list, tag=国内网站, force-policy=direct, update-interval=86400, opt-parser=false, enabled=true
+
+
 [rewrite_remote]
-# 远程重写订阅
-# 包含主机名 hostname 以及复写 rewrite 规则
-# update-interval 为更新时间参数，单位：秒, 默认更新时间为：24*60*60=86400 秒，也就是24小时
-# opt-parser=true/false 用于控制是否对订阅开启资源解析器，不写或者 false 表示不启用解析器
-https://github.com/VirgilClyne/iRingo/blob/main/qxrewrite/Siri_Suggestions.qxrewrite?raw=true, tag=Siri, update-interval=172800, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/TestFlightDownload.conf, tag=Testflight, update-interval=172800, opt-parser=false, enabled=true
-https://github.com/app2smile/rules/raw/master/module/spotify.conf, tag=Spotify, update-interval=172800, opt-parser=false, enabled=true
+# 注意，仅支持版本号16.2以下版本抖音，高版本抖音检测解密，有可能会出现黑屏问题，因此旧版本打勾，新版本不要打勾
+# 如想降级到16.2，ID为：842443730（使用降级软件或者ios越狱插件等都可以）
+https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/QuanX/main/rewrite/douyin.conf, tag=抖音净化（仅16.2以下）, update-interval=86400, opt-parser=false, enabled=true
+#解锁限制类规则，根据需要选择是否开启
+https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/QuanX/master/rewrite/tiktokJP.conf, tag=tiktok解锁日区（勿混用）, update-interval=86400, opt-parser=true, enabled=true
+https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/QuanX/master/rewrite/tiktokTW.conf, tag=tiktok解锁台区（勿混用）, update-interval=86400, opt-parser=true, enabled=false
+https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/QuanX/master/rewrite/tiktokKR.conf, tag=tiktok解锁韩区（勿混用）, update-interval=86400, opt-parser=true, enabled=false
+https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/QuanX/master/rewrite/tiktokUS.conf, tag=tiktok解锁美区（勿混用）, update-interval=86400, opt-parser=true, enabled=false
+#boxjs规则，强烈建议保持开启
+https://ghproxy.com/https://raw.githubusercontent.com/chavyleung/scripts/master/box/rewrite/boxjs.rewrite.quanx.conf, tag=BoxJs, update-interval=86400, opt-parser=true, enabled=true
+#比价格规则，根据需要选择是否开启
+https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/QuanX/master/rewrite/price.conf, tag=淘宝京东比价格, update-interval=86400, opt-parser=false, enabled=true
+#去广告类规则，建议保持开启，但抓取一些看广告得奖励cookie是要关闭
+https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/QuanX/master/rewrite/YouTube.conf, tag=YouTube去广告, update-interval=86400, opt-parser=false, enabled=true
+https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/QuanX/master/rewrite/Rewrite_lhie1.conf, tag=lhie1去广告, update-interval=86400, opt-parser=false, enabled=true
+https://ghproxy.com/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/Block/Advertising.conf, tag=神机去广告, update-interval=86400, opt-parser=false, enabled=true
+https://ghproxy.com/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/General.conf, tag=神机重定向, update-interval=86400, opt-parser=false, enabled=true
+#破解软件规则，建议用的时候开启
+https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/QuanX/master/rewrite/unlockvip.conf, tag=少年歌行解锁vip, update-interval=86400, opt-parser=false, enabled=true
+#京东代收货获取ck，和其他规则都冲突，用时候勾选，抓到cookie后立即关闭
+https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/QuanX/master/rewrite/jddsh.conf, tag=京东待收货（和其他规则都冲突抓完关）, update-interval=86400, opt-parser=false, enabled=false
+#获取cookie类重写，现抓ck现启用，且注意我单列的基本是互相冲突的
+https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/QuanX/master/rewrite/cookie.conf, tag=获取Cookie（现抓现打勾）, update-interval=86400, opt-parser=false, enabled=true
+https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/QuanX/main/rewrite/bsxxl.conf, tag=宝石消消乐红包（用时再勾选和其他冲突）, update-interval=86400, opt-parser=false, enabled=false
+https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/QuanX/main/rewrite/cyds.conf, tag=成语大师（用时再勾选和其他冲突）, update-interval=86400, opt-parser=false, enabled=false
+https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/QuanX/main/rewrite/cydxs.conf, tag=成语大学士（用时再勾选和其他冲突）, update-interval=86400, opt-parser=false, enabled=false
+https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/QuanX/main/rewrite/YaphetSCK.conf, tag=YaphetS脚本ck, update-interval=86400, opt-parser=false, enabled=false
+https://cdn.jsdelivr.net/gh/sngxmini/QuanX@master/rewrite/csxdr.conf, tag=超市小达人获取ck（与获取cookie、动物研究规则冲突）, update-interval=86400, opt-parser=false, enabled=true
+https://ghproxy.com/https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/QuanX/master/rewrite/dwyjy.conf, tag=动物研究院获取ck（与获取cookie、超市、网红规则冲突）, update-interval=86400, opt-parser=false, enabled=false
+https://ghproxy.com/https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/QuanX/master/rewrite/wdwhd.conf, tag=我的网红店获取ck（与获取cookie、超市、动物规则冲突）, update-interval=86400, opt-parser=false, enabled=false
+https://ghproxy.com/https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/QuanX/master/rewrite/debao.conf, tag=德宝小程序（与获取cookie规则冲突）, update-interval=86400, opt-parser=false, enabled=false
+https://ghproxy.com/https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/QuanX/master/rewrite/yyzb.conf, tag=云云赚呗（与其他规则冲突）, update-interval=86400, opt-parser=false, enabled=false
+#下方是可选配置，注意tag说明
+#https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/QuanX/master/rewrite/qianheuser.conf, tag=肥皂千禾账户ck先开（不和后开同时打勾）, update-interval=86400, opt-parser=false, enabled=false
+#https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/QuanX/master/rewrite/qianhetask.conf, tag=肥皂千禾任务ck后开（不和先开同时打勾）, update-interval=86400, opt-parser=false, enabled=false
+#https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/QuanX/master/rewrite/shuqiheader.conf, tag=ziye书旗ck先开（不能和其他书旗同时打勾）, update-interval=86400, opt-parser=false, enabled=false
+#https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/QuanX/master/rewrite/shuqibody.conf, tag=ziye书旗ck后开（不能和其他书旗同时打勾）, update-interval=86400, opt-parser=false, enabled=false
+#https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/QuanX/master/rewrite/shuqibook.conf, tag=ziye书旗书城ck（不能和其他书旗同时打勾）, update-interval=86400, opt-parser=false, enabled=false
+#https://ghproxy.com/https://raw.githubusercontent.com/CenBoMin/GithubSync/main/SHUQI/cookie.conf, tag=姐姐书旗一般ck（不能和其他书旗同时打勾）, update-interval=86400, opt-parser=false, enabled=false
+#https://ghproxy.com/https://raw.githubusercontent.com/CenBoMin/GithubSync/main/SHUQI/spcookie.conf, tag=姐姐书旗极速ck（不能和其他书旗同时打勾）, update-interval=86400, opt-parser=false, enabled=false
+#https://ghproxy.com/https://raw.githubusercontent.com/CenBoMin/GithubSync/main/SHUQI/lottery.conf, tag=姐姐书旗一般转转转ck（不能和其他书旗同时打勾）, update-interval=86400, opt-parser=false, enabled=false
+#https://ghproxy.com/https://raw.githubusercontent.com/CenBoMin/GithubSync/main/SHUQI/everday.conf, tag=姐姐书旗刷时长ck（不能和其他书旗同时打勾）, update-interval=86400, opt-parser=false, enabled=false
+#https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/QuanX/master/rewrite/qx_rewite.txt, tag=sunert中青cookie获取,  update-interval=86400, opt-parser=false, enabled=false
+#https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/QuanX/master/rewrite/qx_youthread.txt, tag=sunert中青阅读body获取,  update-interval=86400, opt-parser=false, enabled=false
+#https://ghproxy.com/https://raw.githubusercontent.com/ztxtop/x/main/rewrite-zqkkz.plugin, tag=中青看看赚&浏览赚Cookie获取（需资源解析器）, update-interval=86400, opt-parser=true, enabled=false
+#https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/QuanX/master/rewrite/jdtqbody.conf, tag=简单天气body（第一个开，单独开）, update-interval=86400, opt-parser=false, enabled=false
+#https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/QuanX/master/rewrite/jdtqapi.conf, tag=简单天气api（第二个开，单开）, update-interval=86400, opt-parser=false, enabled=false
+#https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/QuanX/master/rewrite/jdtqevent.conf, tag=简单天气event（第三个开，单开）, update-interval=86400, opt-parser=false, enabled=false
 
-https://raw.githubusercontent.com/erdongchanyo/Rules/main/Quantumult%20X/AllinOneRewrite/edc.conf, tag=EDC-AllinOneRewrite, update-interval=86400, opt-parser=true, enabled=true
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rewrite/QuantumultX/AdvertisingLite/AdvertisingLite.conf, tag=AdvertisingLite(blackmatrix7, update-interval=86400, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rewrite/QuantumultX/AdvertisingScript/AdvertisingScript.conf, tag=AdvertisingScript(blackmatrix7, update-interval=172800, opt-parser=true, enabled=true
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/external/QuantumultX/TikTokUnlock/TikTokJP.conf, tag=TikTok Unlock(blackmatrix7, update-interval=86400, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/chavyleung/scripts/master/box/rewrite/boxjs.rewrite.quanx.conf, tag=BoxJS, update-interval=86400, opt-parser=false, enabled=true
+[server_local]
+#公众号少年歌行PRO提示您：这个位置用于填写您非机场订阅的固定节点信息（请回车另起一行）
+#自定义本地节点的写法格式如下（抄作业自契阔大佬@orz-3，感谢）
+#http写法
+#http=111.111.111.111:4567, fast-open=false, udp-relay=false, tag=http
+#ssr写法
+#shadowsocks=music.desperadoj.com:30003, method=aes-128-gcm, password=desperadoj.com_free_proxy_emx2, fast-open=false, udp-relay=false, tag=ss
+#v2ray写法
+#vmess=v2ray.com:231, method=aes-128-gcm, password=64532b8d-4c4d-3ec9-829b-81720abe314c, obfs=ws, obfs-host=SCDN.71138.QCFTDS.China-nCDN-nRDS.com, obfs-uri=/iso, fast-open=false, udp-relay=false, tag=v2ray
+#trojan写法
+#trojan=example.com:443, password=pwd, over-tls=true, tls-verification=true, fast-open=false, udp-relay=false, tag=trojan
+
+#解锁网易云音乐节点
+http=106.52.127.72:19951, fast-open=false, udp-relay=false, tag= 解锁节点一 
+shadowsocks=music.desperadoj.com:30003, method=aes-128-gcm, password=desperadoj.com_free_proxy_emx2, fast-open=false, udp-relay=false, tag=解锁节点二
+shadowsocks=127.0.0.1:8080, method=aes-128-gcm, password=This_proxy_is_for_free, fast-open=false, udp-relay=false, tag=解锁节点三
+
+
+[filter_local]
+host-suffix, ooxx.be, proxy
+host-suffix, local, direct
+host-suffix, music.126.net, DIRECT
+ip-cidr, 192.168.0.0/16, direct
+ip-cidr, 10.0.0.0/8, direct
+ip-cidr, 172.16.0.0/12, direct
+ip-cidr, 127.0.0.0/8, direct
+ip-cidr, 100.64.0.0/10, direct
+ip-cidr, 224.0.0.0/4, direct
+ip6-cidr, fe80::/10, direct
+-geoip, cn, direct
+# Netease Music Advertising
+host,admusicpic.music.126.net,reject
+host,iadmat.nosdn.127.net,reject
+host,iadmusicmat.music.126.net,reject
+host,iadmusicmatvideo.music.126.net,reject
+# Netease Music
+host,api.iplay.163.com,网易云音乐
+host,apm3.music.163.com,网易云音乐
+host,apm.music.163.com,网易云音乐
+host,interface3.music.163.com,网易云音乐
+host,interface3.music.163.com.163jiasu.com,网易云音乐
+host,interface.music.163.com,网易云音乐
+host,music.163.com,网易云音乐
+ip-cidr,39.105.63.80/32,网易云音乐
+ip-cidr,39.105.175.128/32,网易云音乐
+ip-cidr,45.254.48.1/32,网易云音乐
+ip-cidr,47.100.127.239/32,网易云音乐
+ip-cidr,59.111.160.195/32,网易云音乐
+ip-cidr,59.111.160.197/32,网易云音乐
+ip-cidr,59.111.181.35/32,网易云音乐
+ip-cidr,59.111.181.38/32,网易云音乐
+ip-cidr,59.111.181.60/32,网易云音乐
+ip-cidr,101.71.154.241/32,网易云音乐
+ip-cidr,103.126.92.132/32,网易云音乐
+ip-cidr,103.126.92.133/32,网易云音乐
+ip-cidr,112.13.119.17/32,网易云音乐
+ip-cidr,112.13.119.18/32,网易云音乐
+ip-cidr,112.13.122.1/32,网易云音乐
+ip-cidr,112.13.122.4/32,网易云音乐
+ip-cidr,115.236.118.33/32,网易云音乐
+ip-cidr,115.236.121.1/32,网易云音乐
+ip-cidr,118.24.63.156/32,网易云音乐
+ip-cidr,182.92.170.253/32,网易云音乐
+ip-cidr,193.112.159.225/32,网易云音乐
+ip-cidr,223.252.199.66/32,网易云音乐
+ip-cidr,223.252.199.67/32,网易云音乐
+# Final
+final,direct
+
 [rewrite_local]
-# 本地重写
+#公众号少年歌行PRO提示您：这个位置用于填写您自己找到的其他未被此懒人包收录的脚本（请回车另起一行）
+#公众号少年歌行PRO提示您：关注公众号或加入交流群可以获得群友分享的各种新脚本（请回车另起一行）
 
 [task_local]
+#公众号少年歌行PRO提示您：这个位置用于填写您自己找到的其他自动化脚本定时信息（请回车另起一行）
+#公众号少年歌行PRO提示您：关注公众号或加入交流群可以获得群友分享的各种自动化脚本定时信息（请回车另起一行）
+
+[http_backend]
+#公众号少年歌行PRO提示您：如您不了解，请不要修改
+#已将boxjs的加载方式修改为http_backend方式，默认浏览器登录boxjs地址为127.0.0.1:9999
+#如果还想用域名方式登录boxjs，先用上面的数字ip登录boxjs，然后点击BoxJs页面最下方的 > 应用按钮(底栏) > 内置应用按钮 > 偏好设置按钮，
+#在新页面`HTTP Backend (Quantumult X)` 中填入 http://127.0.0.1:9999 并保存，就可以继续用域名方式登录boxjs了
+https://ghproxy.com/https://raw.githubusercontent.com/chavyleung/scripts/master/chavy.box.js, tag=BoxJS, path=^/, enabled=true
 
 [mitm]
-passphrase = C67DF3D9
-p12 = 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
-# 开启 mitm，需要自行在Quantumult X中生成证书、安装、信任
-skip_validating_cert = false
-force_sni_domain_name = false
-hostname = -*.amemv.com, -*.snssdk.com
+#公众号少年歌行PRO提示您：需要在圈x设置中生成mitm证书并安装后，这里才会显示证书信息，有证书信息后圈x才能正常工作。
+
+skip_validating_cert = true
