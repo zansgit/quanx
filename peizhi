@@ -29,6 +29,7 @@ static=🙈 网易云音乐, 解锁节点一, 🚀 节点选择, DIRECT, img-url
 static=🐟 漏网之鱼, 🚀 节点选择, ♻️ 自动选择, 🇭🇰 香港,🇨🇳 台湾,🇯🇵 日本,🇸🇬 新加坡,🇺🇸 美国, PROXY, DIRECT, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Final.png
 
 [server_remote]
+https://v2.tjiasu.xyz/api/v2/client/subscribe?token=27c6e347c861047dbf9a3de8a9aeefb4, tag=T, update-interval=172800, opt-parser=true, enabled=true
 
 [filter_remote]
 https://github.com/VirgilClyne/iRingo/blob/main/RuleSet/Apple_News_for_Quantumult_X.list?raw=true, tag=Apple News, force-policy= 美国, update-interval=172800, opt-parser=false, enabled=true
@@ -65,7 +66,6 @@ https://raw.githubusercontent.com/w37fhy/QuantumultX/master/QuantumultX_Cookie.c
 https://raw.githubusercontent.com/app2smile/rules/master/module/spotify.conf, tag=Spotify, update-interval=172800, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rewrite/QuantumultX/AllInOne/AllInOne.conf, tag=Allone去广告, update-interval=172800, opt-parser=false, enabled=true
 [server_local]
-https://v2.tjiasu.xyz/api/v2/client/subscribe?token=27c6e347c861047dbf9a3de8a9aeefb4, tag=T, update-interval=172800, opt-parser=true, enabled=true
 
 #解锁网易云音乐节点
 http=106.52.127.72:19951, fast-open=false, udp-relay=false, tag= 解锁节点一
