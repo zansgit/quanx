@@ -21,7 +21,7 @@ static=🚀 节点选择, ♻️ 自动选择, 🇭🇰 香港,🇯🇵 日本,�
 # 默认设置10分钟测速一次，当前使用节点延迟和最新测速延迟最低的节点相差100ms以上则切换为最新的最低延迟节点，否则继续延用节点
 url-latency-benchmark=♻️ 自动选择, server-tag-regex=.*, check-interval=600, tolerance=100, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Auto.png
 url-latency-benchmark=🇭🇰 香港, server-tag-regex=(?=.*(港|HK|(?i)Hong))^((?!(台湾|日本|新加坡|美国|韩国|狮城|南朝鲜|US|SG|JP|KR|TW|台灣|美國|韓國|獅城)).)*$, check-interval=600, tolerance=50, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Hong_Kong.png
-url-latency-benchmark=🇨🇳 台湾, server-tag-regex=(?=.*(台|TW|(?i)Taiwan))^((?!(港|日|韩|新|美)).)*$, check-interval=600, tolerance=50, img-url=https://raw.githubusercontent.com/Orz-3/face/master/TW.png
+url-latency-benchmark=🇨🇳 台湾, server-tag-regex=(?=.*(台|TW|(?i)Taiwan))^((?!(港|日|韩|新|美)).)*$, check-interval=600, tolerance=50, img-url=t.square.fill.system
 url-latency-benchmark=🇯🇵 日本, server-tag-regex=(?=.*(日本|JP|(?i)Japan))^((?!(香港|台湾|新加坡|美国|韩国|狮城|南朝鲜|US|SG|KR|HK|TW|台灣|美國|韓國|獅城)).)*$, check-interval=600, tolerance=100, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Japan.png
 url-latency-benchmark=🇸🇬 新加坡, server-tag-regex=(?=.*(新加坡|狮城|SG|(?i)Singapore))^((?!(香港|台湾|日本|美国|韩国|南朝鲜|US|JP|KR|HK|TW|台灣|美國|韓國)).)*$, check-interval=600, tolerance=100, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Singapore.png
 url-latency-benchmark=🇺🇸 美国, server-tag-regex=(?=.*(美国|美國|US|洛杉矶|西雅图|(?i)States|American))^((?!(香港|台湾|日本|新加坡|韩国|狮城|南朝鲜|SG|JP|KR|HK|TW|台灣|韓國|獅城)).)*$, check-interval=600, tolerance=100, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/United_States.png
@@ -29,6 +29,7 @@ static=🙈 网易云音乐, 解锁节点一, 🚀 节点选择, DIRECT, img-url
 static=🐟 漏网之鱼, 🚀 节点选择, ♻️ 自动选择, 🇭🇰 香港,🇨🇳 台湾,🇯🇵 日本,🇸🇬 新加坡,🇺🇸 美国, PROXY, DIRECT, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Final.png
 
 [server_remote]
+https://subscribe.a9b.top/link/C9IPrky4dbo1BHsK?list=quantumultx, tag=🐸, update-interval=172800, opt-parser=false, enabled=true
 https://v2.tjiasu.xyz/api/v2/client/subscribe?token=27c6e347c861047dbf9a3de8a9aeefb4, tag=T, update-interval=172800, opt-parser=true, enabled=true
 
 [filter_remote]
@@ -40,7 +41,7 @@ https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter
 # Advertising 广告
 https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/Guard/Advertising.list, tag=🛑轻量广告拦截-拒绝, update-interval=86400, opt-parser=false, enabled=true
 # NobyDa大佬去广告 -默认关闭，自行手动启用！
-https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/AdRule.list, tag=🛑重度广告拦截-拒绝, force-policy=reject, update-interval=86400, opt-parser=false, enabled=false
+https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/AdRule.list, tag=🛑重度广告拦截-拒绝, force-policy=reject, update-interval=86400, opt-parser=false, enabled=true
 # Privacy 隐私
 https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/Guard/Privacy.list, tag=🛑隐私保护-拒绝, update-interval=86400, opt-parser=false, enabled=true
 # Hijacking 运营商劫持或恶意网站
