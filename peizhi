@@ -1,155 +1,150 @@
-# Quantumult X小白配置 制作 by微信公众号：少年歌行PRO 2021/9/1重置中。
-# 重制版V0.01
-# Telegram资源发布群（禁言纯净）@shao66 
-# Telegram水友交流群（资源同步）@sngxpro
-# Telegram私聊群主 @shaogebot
-#脚本调用下列大佬的资源，在此致谢，排名不分先后
-#@nobyda @chavyleung @zzpiglet @songyangzz @toulanboy @sunert @peng-ym @iepngs @lowking @lxk0301 @vinewx @chouchoui @Orz-3 @ZhiYi-N @evilbutcher @yichahucha @id77 @photonmang @wangdelu2020 @Zero-S1 @ziye12 @barrym-chen @iisams @LJJJia @congcong0806 @XidNDD @passerby-b @photonmang
+# Quantumult X小白配置 制作 by Orz-3 TG频道：t.me/Orzmini 2022/02/19
 
-#特别感谢Orz-3的图标项目 美化效果杠杠的
-
-#特别感谢faker2项目的不具名大佬脚本的备份
+[general]
+server_check_url=http://cp.cloudflare.com/generate_204
+dns_exclusion_list=*.cmpassport.com, *.jegotrip.com.cn, *.icitymobile.mobi, id6.me, *.pingan.com.cn, *.cmbchina.com
+geo_location_checker=http://ip-api.com/json/?lang=zh-CN, https://raw.githubusercontent.com/Orz-3/Orz-3/master/QuantumultX/IP.js
+resource_parser_url=https://cdn.jsdelivr.net/gh/KOP-XIAO/QuantumultX@master/Scripts/resource-parser.js
+excluded_routes=239.255.255.250/32, 24.105.30.129/32, 185.60.112.157/32, 185.60.112.158/32, 182.162.132.1/32
+udp_whitelist=1-442, 444-65535
 
 [dns]
 no-ipv6
-server=119.29.29.29
+server=/aaplimg.com/119.29.29.29
+server=/apple.com/119.29.29.29
+server=/apple.com.cn/119.29.29.29
+server=/apple-cloudkit.com/119.29.29.29
+server=/apple-livephotoskit.com/119.29.29.29
+server=/apple-mapkit.com/119.29.29.29
+server=/cdn-apple.com/119.29.29.29
+server=/icloud.com/119.29.29.29
+server=/icloud.com.cn/119.29.29.29
+server=/mzstatic.com/119.29.29.29
+server=/*.aaplimg.com/119.29.29.29
+server=/*.apple.com/119.29.29.29
+server=/*.apple-cloudkit.com/119.29.29.29
+server=/*.apple-livephotoskit.com/119.29.29.29
+server=/*.apple-mapkit.com/119.29.29.29
+server=/*.cdn-apple.com/119.29.29.29
+server=/*.icloud.com/119.29.29.29
+server=/*.icloud.com.cn/119.29.29.29
+server=/*.mzstatic.com/119.29.29.29
+server=/*apple.com.akadns.net/119.29.29.29
+server=/*.apple.com.edgekey.net/119.29.29.29
+server=/*.apple.com.edgekey.net.globalredir.akadns.net/119.29.29.29
+server=/*icloud.com.akadns.net/119.29.29.29
 address=/mtalk.google.com/108.177.125.188
-
-[general]
-server_check_url=http://bing.com/
-dns_exclusion_list=*.cmpassport.com, *.jegotrip.com.cn, *.icitymobile.mobi, id6.me, *.icitymobile.mobi, *.pingan.com.cn, *.cmbchina.com, *.localnetwork.uop, mfs.ykimg.com*.ttf
-geo_location_checker=http://ip-api.com/json/?lang=zh-CN, https://ghproxy.com/https://raw.githubusercontent.com/Orz-3/QuantumultX/master/IP.js
-resource_parser_url=https://ghproxy.com/https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/resource-parser.js
-profile_img_url=https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/QuanX/master/icons/wangzhe/bailishouyue.png
-fallback_udp_policy=direct
-udp_whitelist=53, 80-427, 444-65535
-
+server=/dl.google.com/119.29.29.29
+server=/dl.l.google.com/119.29.29.29
+server=/update.googleapis.com/119.29.29.29
+server=/*.dl.playstation.net/119.29.29.29
+server=/amplifi.lan/system
+server=/router.synology.com/system
+server=/sila.razer.com/system
+server=/router.asus.com/system
+server=/routerlogin.net/system
+server=/orbilogin.com/system
+server=/www.LinksysSmartWiFi.com/system
+server=/LinksysSmartWiFi.com/system
+server=/myrouter.local/system
+server=/www.miwifi.com/system
+server=/miwifi.com/system
+server=/mediarouter.home/system
+server=/tplogin.cn/system
+server=/tplinklogin.net/system
+server=/melogin.cn/system
+server=/falogin.cn/system
 
 [policy]
-#可选策略，默认不启用，如需启用，请去掉下行的#。
-#static=节点选择, 手动选择, 延迟最低, img-url=https://ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/none/Zero.png
-#可选策略，默认不启用，如需启用，请去掉下行的#。
-#static=手动选择, server-tag-regex=.*, img-url=https://ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/Manual.png
-#可选策略，默认不启用，如需启用，请去掉下行的#。
-#url-latency-benchmark=延迟最低, server-tag-regex=.*, check-interval=300, tolerance=0, img-url=https://ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/Urltest.png
-#可选策略，默认不启用，如需启用，请同时启用下方[filter]的网易云音乐分流、[server remote]的网易云节点订阅，三者不同时启用成功会报错。启用方法是删除下一行开头的#
-#选择本地节点中的网易云解锁灰色节点
-static=TikTok, proxy, img-url=https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/icons/main/genshin/diluke.png
-static=网易云音乐, 解锁节点一, 解锁节点二, 解锁节点三, img-url=https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/icons/main/genshin/wendi.png
-static=新加坡, server-tag-regex=(?=.*(新加坡|狮城|SG|(?i)Singapore))^((?!(专线|手游|游戏|(?i)IPLC|IEPL|game)).)*$, img-url=https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/icons/main/genshin/keli.png
-static=美国, server-tag-regex=(?=.*(美国|美國|US|(?i)States|American))^((?!(专线|手游|游戏|(?i)IPLC|IEPL|game)).)*$, img-url=https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/icons/main/genshin/anbo.png
-static=日本, server-tag-regex=(?=.*(日本|JP|(?i)Japan))^((?!(专线|手游|游戏|(?i)IPLC|IEPL|game)).)*$, img-url=https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/icons/main/genshin/keqing.png
-static=韩国, server-tag-regex=(?=.*(韩国|韓國|南朝鲜|KR|(?i)Korean))^((?!(专线|手游|游戏|(?i)IPLC|IEPL|game)).)*$, img-url=https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/icons/main/genshin/feixieer.png
-static=香港, server-tag-regex=(?=.*(香港|HK|(?i)Hong))^((?!(专线|手游|游戏|(?i)IPLC|IEPL|game)).)*$, img-url=https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/icons/main/genshin/xiangling.png
-static=台湾, server-tag-regex=(?=.*(台湾|台灣|TW|(?i)Taiwan))^((?!(专线|手游|游戏|(?i)IPLC|IEPL|game)).)*$, img-url=https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/icons/main/genshin/babala.png
-static=特殊, server-tag-regex=^((?!(专线|手游|游戏|香港|台湾|日本|新加坡|美国|韩国|狮城|南朝鲜|US|SG|JP|KR|HK|TW|台灣|美國|韓國|獅城|账号|试用|流量|电报|网址|最新|域名|剩余|(?i)IPLC|IEPL|game|States|American|Singapore|Japan|Korea|Hong|Taiwan|data|date|website)).)*$, img-url=https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/icons/main/genshin/mona.png
-static=IPLC, server-tag-regex=(手游|游戏|专线|(?i)IPLC|IEPL|game), img-url=https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/icons/main/genshin/shatang2.png
-static=苹果服务, direct, 美国, 香港, proxy, img-url=https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/icons/main/genshin/qiqi.png
-static=全球加速, proxy, 美国, 新加坡, 日本, 韩国, 香港, 台湾, 特殊, IPLC, direct, img-url=https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/icons/main/genshin/ganyu.png
-static=港台番剧, direct, 香港, 台湾, proxy, img-url=https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/icons/main/genshin/diaona.png
-static=国际媒体, proxy, 美国, 新加坡, 日本, 韩国, 香港, 台湾, 特殊, direct, img-url=https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/icons/main/genshin/qin.png
-static=声田音乐, proxy, 美国, 香港, 日本, direct, img-url=https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/icons/main/genshin/beidou.png
-static=网飞影视, proxy, 新加坡, 香港, 台湾, direct, img-url=https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/icons/main/genshin/lisha.png
-static=电报代理, proxy, direct, 新加坡, IPLC, img-url=https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/icons/main/genshin/ningguang.png
-static=黑白名单, proxy, direct, 美国, 新加坡, 日本, 韩国, 香港, 台湾, 特殊, IPLC, img-url=https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/icons/main/genshin/nvshi.png
-
-
+static=🚀 节点选择, proxy, direct, Netflix, 全球加速, 苹果服务, 港台番剧, 国际媒体, 黑白名单, 香港节点, 台湾节点, 日本节点, 狮城节点, 美国节点, ♻️ 自动选择, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Round_Robin.png
+# 默认设置10分钟测速一次，当前使用节点延迟和最新测速延迟最低的节点相差100ms以上则切换为最新的最低延迟节点，否则继续延用节点
+static=Netflix, direct, proxy, reject, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix.png
+static=全球加速, 香港节点, 台湾节点, 日本节点, 狮城节点, 美国节点, proxy, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png
+static=苹果服务, direct, 香港节点, 台湾节点, 美国节点, 日本节点, 狮城节点, proxy, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Apple.png
+static=港台番剧, direct, 香港节点, 台湾节点, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Bili.png
+static=国际媒体, 香港节点, 台湾节点, 日本节点, 美国节点, 狮城节点, proxy, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/YouTube.png
+static=黑白名单, 全球加速, direct, 香港节点, 台湾节点, 日本节点, 狮城节点, 美国节点, proxy, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Final.png
+url-latency-benchmark=♻️ 自动选择, server-tag-regex=.*, check-interval=600, tolerance=100, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Round_Robin.png
+url-latency-benchmark=香港节点, server-tag-regex=(?=.*(港|HK|(?i)Hong))^((?!(台|日|韩|新|美)).)*$, check-interval=600, tolerance=0, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png
+url-latency-benchmark=台湾节点, server-tag-regex=(?=.*(台|TW|(?i)Taiwan))^((?!(港|日|韩|新|美)).)*$, check-interval=600, tolerance=0, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/TW.png
+url-latency-benchmark=日本节点, server-tag-regex=(?=.*(日|JP|(?i)Japan))^((?!(港|台|韩|新|美)).)*$, check-interval=600, tolerance=0, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png
+url-latency-benchmark=狮城节点, server-tag-regex=(?=.*(新|狮|獅|SG|(?i)Singapore))^((?!(港|台|日|韩|美)).)*$, check-interval=600, tolerance=0, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png
+url-latency-benchmark=美国节点, server-tag-regex=(?=.*(美|US|(?i)States|American))^((?!(港|台|日|韩|新)).)*$, check-interval=600, tolerance=0, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
 
 [server_remote]
-#公众号少年歌行PRO提示您：这个位置用于填写您的机场订阅地址（请回车另起一行）
-
+https://v2.tjiasu.xyz/api/v2/client/subscribe?token=27c6e347c861047dbf9a3de8a9aeefb4, tag=T, update-interval=172800, opt-parser=false, enabled=true
 
 [filter_remote]
-https://ghproxy.com/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/Unbreak.list, tag=规则修正, update-interval=86400, opt-parser=false, enabled=true
-https://ghproxy.com/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/Guard/Advertising.list, tag=广告拦截, force-policy=reject, update-interval=86400, opt-parser=false, enabled=true
-https://ghproxy.com/https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/AdRule.list, tag=广告拦截, force-policy=reject, update-interval=86400, opt-parser=false, enabled=true
-https://ghproxy.com/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/Guard/Privacy.list, tag=隐私保护, force-policy=reject, update-interval=86400, opt-parser=false, enabled=true
-https://ghproxy.com/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/Guard/Hijacking.list, tag=运营劫持, force-policy=reject, update-interval=86400, opt-parser=false, enabled=true
-https://ghproxy.com/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/Extra/Telegram/Telegram.list, tag=电报代理, force-policy=电报代理, update-interval=86400, opt-parser=false, enabled=true
-https://ghproxy.com/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/StreamingMedia/Music/Spotify.list, tag=声田音乐, force-policy=声田音乐, update-interval=86400, opt-parser=false, enabled=true
-https://ghproxy.com/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/StreamingMedia/Video/Netflix.list, tag=网飞影视, force-policy=网飞影视, update-interval=86400, opt-parser=false, enabled=true
-https://ghproxy.com/https://raw.githubusercontent.com/Semporia/Quantumult-X/master/Filter/TikTok.list, tag=TikTok, force-policy=TikTok, update-interval=86400, opt-parser=false, enabled=true
-https://ghproxy.com/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/StreamingMedia/Video/Bahamut.list, tag=动画疯, force-policy=台湾, update-interval=86400, opt-parser=false, enabled=true
-https://ghproxy.com/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/StreamingMedia/Streaming.list, tag=国际媒体, force-policy=国际媒体, update-interval=86400, opt-parser=false, enabled=true
-https://ghproxy.com/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/StreamingMedia/StreamingSE.list, tag=港台番剧, force-policy=港台番剧, update-interval=86400, opt-parser=false, enabled=true
-https://ghproxy.com/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/Global.list, tag=全球加速, force-policy=全球加速, update-interval=86400, opt-parser=false, enabled=true
-https://ghproxy.com/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/Extra/Apple/AppStoreConnect.list, tag=苹果服务, force-policy=苹果服务, update-interval=86400, opt-parser=false, enabled=true
-https://ghproxy.com/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/Extra/Apple/AppStore.list, tag=苹果服务, force-policy=苹果服务, update-interval=86400, opt-parser=false, enabled=true
-https://ghproxy.com/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/China.list, tag=国内网站, force-policy=direct, update-interval=86400, opt-parser=false, enabled=true
-
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Netflix/Netflix.list, tag=Netflix策略, force-policy=Netflix, update-interval=172800, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Unbreak.list, tag=规则修正, force-policy=direct, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Advertising.list, tag=广告拦截, force-policy=reject, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/AdvertisingPlus.list#type=domain-set, tag=广告拦截, force-policy=reject, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/NobyDa/Script/master/Surge/AdRule.list, tag=广告拦截, force-policy=reject, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Hijacking.list, tag=运营劫持, force-policy=reject, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Privacy.list, tag=隐私保护, force-policy=reject, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/Video/TikTok.list, tag=海外抖音, force-policy=全球加速, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/Region/HK.list, tag=流媒体HK, force-policy=香港节点, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/Region/TW.list, tag=流媒体TW, force-policy=台湾节点, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/Region/JP.list, tag=流媒体JP, force-policy=日本节点, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/Region/US.list, tag=流媒体US, force-policy=美国节点, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/Streaming.list, tag=国际媒体, force-policy=国际媒体, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/StreamingSE.list, tag=港台番剧, force-policy=港台番剧, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Global.list, tag=全球加速, force-policy=全球加速, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Extra/Apple/Apple.list, tag=苹果服务, force-policy=苹果服务, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/China.list, tag=国内网站, force-policy=direct, update-interval=172800, opt-parser=true, enabled=true
 
 [rewrite_remote]
-# 注意，仅支持版本号16.2以下版本抖音，高版本抖音检测解密，有可能会出现黑屏问题，因此旧版本打勾，新版本不要打勾
-# 如想降级到16.2，ID为：842443730（使用降级软件或者ios越狱插件等都可以）
-https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/QuanX/main/rewrite/douyin.conf, tag=抖音净化（仅16.2以下）, update-interval=86400, opt-parser=false, enabled=true
-#解锁限制类规则，根据需要选择是否开启
-https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/QuanX/master/rewrite/tiktokJP.conf, tag=tiktok解锁日区（勿混用）, update-interval=86400, opt-parser=true, enabled=true
-https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/QuanX/master/rewrite/tiktokTW.conf, tag=tiktok解锁台区（勿混用）, update-interval=86400, opt-parser=true, enabled=false
-https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/QuanX/master/rewrite/tiktokKR.conf, tag=tiktok解锁韩区（勿混用）, update-interval=86400, opt-parser=true, enabled=false
-https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/QuanX/master/rewrite/tiktokUS.conf, tag=tiktok解锁美区（勿混用）, update-interval=86400, opt-parser=true, enabled=false
-#boxjs规则，强烈建议保持开启
-https://ghproxy.com/https://raw.githubusercontent.com/chavyleung/scripts/master/box/rewrite/boxjs.rewrite.quanx.conf, tag=BoxJs, update-interval=86400, opt-parser=true, enabled=true
-#比价格规则，根据需要选择是否开启
-https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/QuanX/master/rewrite/price.conf, tag=淘宝京东比价格, update-interval=86400, opt-parser=false, enabled=true
-#去广告类规则，建议保持开启，但抓取一些看广告得奖励cookie是要关闭
-https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/QuanX/master/rewrite/YouTube.conf, tag=YouTube去广告, update-interval=86400, opt-parser=false, enabled=true
-https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/QuanX/master/rewrite/Rewrite_lhie1.conf, tag=lhie1去广告, update-interval=86400, opt-parser=false, enabled=true
-https://ghproxy.com/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/Block/Advertising.conf, tag=神机去广告, update-interval=86400, opt-parser=false, enabled=true
-https://ghproxy.com/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/General.conf, tag=神机重定向, update-interval=86400, opt-parser=false, enabled=true
-#破解软件规则，建议用的时候开启
-https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/QuanX/master/rewrite/unlockvip.conf, tag=少年歌行解锁vip, update-interval=86400, opt-parser=false, enabled=true
-#京东代收货获取ck，和其他规则都冲突，用时候勾选，抓到cookie后立即关闭
-https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/QuanX/master/rewrite/jddsh.conf, tag=京东待收货（和其他规则都冲突抓完关）, update-interval=86400, opt-parser=false, enabled=false
-#获取cookie类重写，现抓ck现启用，且注意我单列的基本是互相冲突的
-https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/QuanX/master/rewrite/cookie.conf, tag=获取Cookie（现抓现打勾）, update-interval=86400, opt-parser=false, enabled=true
-https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/QuanX/main/rewrite/bsxxl.conf, tag=宝石消消乐红包（用时再勾选和其他冲突）, update-interval=86400, opt-parser=false, enabled=false
-https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/QuanX/main/rewrite/cyds.conf, tag=成语大师（用时再勾选和其他冲突）, update-interval=86400, opt-parser=false, enabled=false
-https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/QuanX/main/rewrite/cydxs.conf, tag=成语大学士（用时再勾选和其他冲突）, update-interval=86400, opt-parser=false, enabled=false
-https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/QuanX/main/rewrite/YaphetSCK.conf, tag=YaphetS脚本ck, update-interval=86400, opt-parser=false, enabled=false
-https://cdn.jsdelivr.net/gh/sngxmini/QuanX@master/rewrite/csxdr.conf, tag=超市小达人获取ck（与获取cookie、动物研究规则冲突）, update-interval=86400, opt-parser=false, enabled=true
-https://ghproxy.com/https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/QuanX/master/rewrite/dwyjy.conf, tag=动物研究院获取ck（与获取cookie、超市、网红规则冲突）, update-interval=86400, opt-parser=false, enabled=false
-https://ghproxy.com/https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/QuanX/master/rewrite/wdwhd.conf, tag=我的网红店获取ck（与获取cookie、超市、动物规则冲突）, update-interval=86400, opt-parser=false, enabled=false
-https://ghproxy.com/https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/QuanX/master/rewrite/debao.conf, tag=德宝小程序（与获取cookie规则冲突）, update-interval=86400, opt-parser=false, enabled=false
-https://ghproxy.com/https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/QuanX/master/rewrite/yyzb.conf, tag=云云赚呗（与其他规则冲突）, update-interval=86400, opt-parser=false, enabled=false
-#下方是可选配置，注意tag说明
-#https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/QuanX/master/rewrite/qianheuser.conf, tag=肥皂千禾账户ck先开（不和后开同时打勾）, update-interval=86400, opt-parser=false, enabled=false
-#https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/QuanX/master/rewrite/qianhetask.conf, tag=肥皂千禾任务ck后开（不和先开同时打勾）, update-interval=86400, opt-parser=false, enabled=false
-#https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/QuanX/master/rewrite/shuqiheader.conf, tag=ziye书旗ck先开（不能和其他书旗同时打勾）, update-interval=86400, opt-parser=false, enabled=false
-#https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/QuanX/master/rewrite/shuqibody.conf, tag=ziye书旗ck后开（不能和其他书旗同时打勾）, update-interval=86400, opt-parser=false, enabled=false
-#https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/QuanX/master/rewrite/shuqibook.conf, tag=ziye书旗书城ck（不能和其他书旗同时打勾）, update-interval=86400, opt-parser=false, enabled=false
-#https://ghproxy.com/https://raw.githubusercontent.com/CenBoMin/GithubSync/main/SHUQI/cookie.conf, tag=姐姐书旗一般ck（不能和其他书旗同时打勾）, update-interval=86400, opt-parser=false, enabled=false
-#https://ghproxy.com/https://raw.githubusercontent.com/CenBoMin/GithubSync/main/SHUQI/spcookie.conf, tag=姐姐书旗极速ck（不能和其他书旗同时打勾）, update-interval=86400, opt-parser=false, enabled=false
-#https://ghproxy.com/https://raw.githubusercontent.com/CenBoMin/GithubSync/main/SHUQI/lottery.conf, tag=姐姐书旗一般转转转ck（不能和其他书旗同时打勾）, update-interval=86400, opt-parser=false, enabled=false
-#https://ghproxy.com/https://raw.githubusercontent.com/CenBoMin/GithubSync/main/SHUQI/everday.conf, tag=姐姐书旗刷时长ck（不能和其他书旗同时打勾）, update-interval=86400, opt-parser=false, enabled=false
-#https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/QuanX/master/rewrite/qx_rewite.txt, tag=sunert中青cookie获取,  update-interval=86400, opt-parser=false, enabled=false
-#https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/QuanX/master/rewrite/qx_youthread.txt, tag=sunert中青阅读body获取,  update-interval=86400, opt-parser=false, enabled=false
-#https://ghproxy.com/https://raw.githubusercontent.com/ztxtop/x/main/rewrite-zqkkz.plugin, tag=中青看看赚&浏览赚Cookie获取（需资源解析器）, update-interval=86400, opt-parser=true, enabled=false
-#https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/QuanX/master/rewrite/jdtqbody.conf, tag=简单天气body（第一个开，单独开）, update-interval=86400, opt-parser=false, enabled=false
-#https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/QuanX/master/rewrite/jdtqapi.conf, tag=简单天气api（第二个开，单开）, update-interval=86400, opt-parser=false, enabled=false
-#https://ghproxy.com/https://raw.githubusercontent.com/sngxmini/QuanX/master/rewrite/jdtqevent.conf, tag=简单天气event（第三个开，单开）, update-interval=86400, opt-parser=false, enabled=false
+https://github.com/ddgksf2013/Cuttlefish/raw/master/Rewrite/AdBlock/Bilibili.conf, tag=B站去广告, update-interval=172800, opt-parser=false, enabled=true
+https://github.com/ddgksf2013/Cuttlefish/raw/master/Rewrite/UnlockVip/Spotify.conf, tag=Spotify, update-interval=172800, opt-parser=false, enabled=true
+
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/Block/YouTubeAds.conf, tag=YouTube去广告, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/chavyleung/scripts/master/box/rewrite/boxjs.rewrite.quanx.conf, tag=boxjs, update-interval=172800, opt-parser=false, enabled=false
+https://raw.githubusercontent.com/id77/QuantumultX/master/rewrite/Youtube_CC.conf, tag=YouTube字幕, update-interval=172800, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/Orz-3/QuantumultX/master/Bili_Auto_Regions.conf, tag=Bilibili换区脚本, update-interval=172800, opt-parser=false, enabled=false
+https://raw.githubusercontent.com/Orz-3/QuantumultX/master/JD_TB_price.conf, tag=比价脚本, update-interval=172800, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/Orz-3/QuantumultX/master/JS_GetCookie.conf, tag=Cookie, update-interval=172800, opt-parser=false, enabled=false
+https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/TestFlightDownload.conf , tag=TestFlight区域限制解除, update-interval=172800, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/Orz-3/QuantumultX/master/TikTok.conf, tag=Tiktok解锁, update-interval=172800, opt-parser=false, enabled=false
+https://raw.githubusercontent.com/Orz-3/QuantumultX/master/Netflix_ratings.conf, tag=Netflix评分, update-interval=172800, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/General.conf, tag=神机重定向, update-interval=172800, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/Block/Advertising.conf, tag=神机去广告, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/Rewrite_lhie1.conf, tag=lhie1去广告, update-interval=172800, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/Block/AdvertisingPlus.conf, tag=去广告脚本, update-interval=172800, opt-parser=false, enabled=true
 
 [server_local]
-#公众号少年歌行PRO提示您：这个位置用于填写您非机场订阅的固定节点信息（请回车另起一行）
-#自定义本地节点的写法格式如下（抄作业自契阔大佬@orz-3，感谢）
-#http写法
-#http=111.111.111.111:4567, fast-open=false, udp-relay=false, tag=http
-#ssr写法
-#shadowsocks=music.desperadoj.com:30003, method=aes-128-gcm, password=desperadoj.com_free_proxy_emx2, fast-open=false, udp-relay=false, tag=ss
-#v2ray写法
-#vmess=v2ray.com:231, method=aes-128-gcm, password=64532b8d-4c4d-3ec9-829b-81720abe314c, obfs=ws, obfs-host=SCDN.71138.QCFTDS.China-nCDN-nRDS.com, obfs-uri=/iso, fast-open=false, udp-relay=false, tag=v2ray
-#trojan写法
-#trojan=example.com:443, password=pwd, over-tls=true, tls-verification=true, fast-open=false, udp-relay=false, tag=trojan
+vmess=4.ezydfdd.com:443, method=aes-128-gcm, password=2fc1ae9d-6253-4921-cc6d-1a5312626e8b, obfs=wss, obfs-host=4.ezydfdd.com, obfs-uri=/qwe, tls-verification=false, fast-open=false, udp-relay=false, aead=true, tag=日本2-clone
 
-#解锁网易云音乐节点
-http=106.52.127.72:19951, fast-open=false, udp-relay=false, tag= 解锁节点一 
-shadowsocks=music.desperadoj.com:30003, method=aes-128-gcm, password=desperadoj.com_free_proxy_emx2, fast-open=false, udp-relay=false, tag=解锁节点二
-shadowsocks=127.0.0.1:8080, method=aes-128-gcm, password=This_proxy_is_for_free, fast-open=false, udp-relay=false, tag=解锁节点三
+vmess=3.ezydfdd.com:443, method=aes-128-gcm, password=da54f715-b304-4ba9-a655-0f2b67d37b35, obfs=wss, obfs-host=3.ezydfdd.com, obfs-uri=/qwe, tls-verification=false, fast-open=false, udp-relay=false, aead=true, tag=香港3
+
+vmess=4.ezydfdd.com:443, method=aes-128-gcm, password=75c269d0-626f-4ebd-f669-9221692983fb, obfs=wss, obfs-host=4.ezydfdd.com, obfs-uri=/qwe, tls-verification=false, fast-open=false, udp-relay=false, aead=true, tag=香港2
+
+vmess=5.ezydfdd.com:443, method=aes-128-gcm, password=89fefb2d-c4a6-45be-fe1e-11bd949f91b7, obfs=wss, obfs-host=5.ezydfdd.com, obfs-uri=/qwe, tls-verification=false, fast-open=false, udp-relay=false, aead=true, tag=日本
+
+vmess=121.5.50.132:8888, method=aes-128-gcm, password=ec87b828-e80b-46dd-9f11-08402f2bb2e9, fast-open=false, udp-relay=false, aead=true, tag=香港
+
+vmess=4.ezydfdd.com:443, method=aes-128-gcm, password=2fc1ae9d-6253-4921-cc6d-1a5312626e8b, obfs=wss, obfs-host=4.ezydfdd.com, obfs-uri=/qwe, tls-verification=false, fast-open=false, udp-relay=false, aead=true, tag=日本2
+
+vmess=5.ezydfdd.com:443, method=aes-128-gcm, password=89fefb2d-c4a6-45be-fe1e-11bd949f91b7, obfs=wss, obfs-host=5.ezydfdd.com, obfs-uri=/qwe, tls-verification=false, fast-open=false, udp-relay=false, aead=true, tag=日本3
+
+vmess=1.ezydfdd.com:443, method=aes-128-gcm, password=50277823-d1ae-49c1-a351-8edd000ff5de, obfs=wss, obfs-host=1.ezydfdd.com, obfs-uri=/qwe, tls-verification=false, fast-open=false, udp-relay=false, aead=true, tag=西美高速(限)2
+
+shadowsocks=42.157.195.237:12127, method=aes-256-cfb, password=68xdgu9eyif, ssr-protocol=auth_aes128_sha1, ssr-protocol-param=1134590:MngAfe, obfs=http_simple, obfs-host=bff151134590.v23f7nM0, fast-open=false, udp-relay=false, tag=112233
+
+vmess=3.ezydfdd.com:443, method=aes-128-gcm, password=7ab3f0d7-164c-4bde-8a45-2d6653da2ad1, obfs=wss, obfs-uri=/qwe, tls-verification=true, fast-open=false, udp-relay=false, aead=true, tag=美国高速公益节点
+
+vmess=2.ezydfdd.com:443, method=aes-128-gcm, password=8ce46aae-dae5-4d50-ebcd-f9514e4c048a, obfs=wss, obfs-host=2.ezydfdd.com, obfs-uri=/qwe, tls-verification=true, fast-open=false, udp-relay=false, aead=true, tag=西美高速(限)
+
 
 
 [filter_local]
-host-suffix, ooxx.be, proxy
+host, mdap.wallet.pbcdci.cn, direct
+host, mdap.wallet.pbcdci.cn, direct
+host, mdap.wallet.pbcdci.cn, direct
+host, mdap.wallet.pbcdci.cn, direct
+host, mdap.wallet.pbcdci.cn, direct
+host, sensors.binance.cloud, 狮城节点
+host, www.icourse163.org, direct
 host-suffix, local, direct
-host-suffix, music.126.net, DIRECT
 ip-cidr, 192.168.0.0/16, direct
 ip-cidr, 10.0.0.0/8, direct
 ip-cidr, 172.16.0.0/12, direct
@@ -157,62 +152,22 @@ ip-cidr, 127.0.0.0/8, direct
 ip-cidr, 100.64.0.0/10, direct
 ip-cidr, 224.0.0.0/4, direct
 ip6-cidr, fe80::/10, direct
--geoip, cn, direct
-# Netease Music Advertising
-host,admusicpic.music.126.net,reject
-host,iadmat.nosdn.127.net,reject
-host,iadmusicmat.music.126.net,reject
-host,iadmusicmatvideo.music.126.net,reject
-# Netease Music
-host,api.iplay.163.com,网易云音乐
-host,apm3.music.163.com,网易云音乐
-host,apm.music.163.com,网易云音乐
-host,interface3.music.163.com,网易云音乐
-host,interface3.music.163.com.163jiasu.com,网易云音乐
-host,interface.music.163.com,网易云音乐
-host,music.163.com,网易云音乐
-ip-cidr,39.105.63.80/32,网易云音乐
-ip-cidr,39.105.175.128/32,网易云音乐
-ip-cidr,45.254.48.1/32,网易云音乐
-ip-cidr,47.100.127.239/32,网易云音乐
-ip-cidr,59.111.160.195/32,网易云音乐
-ip-cidr,59.111.160.197/32,网易云音乐
-ip-cidr,59.111.181.35/32,网易云音乐
-ip-cidr,59.111.181.38/32,网易云音乐
-ip-cidr,59.111.181.60/32,网易云音乐
-ip-cidr,101.71.154.241/32,网易云音乐
-ip-cidr,103.126.92.132/32,网易云音乐
-ip-cidr,103.126.92.133/32,网易云音乐
-ip-cidr,112.13.119.17/32,网易云音乐
-ip-cidr,112.13.119.18/32,网易云音乐
-ip-cidr,112.13.122.1/32,网易云音乐
-ip-cidr,112.13.122.4/32,网易云音乐
-ip-cidr,115.236.118.33/32,网易云音乐
-ip-cidr,115.236.121.1/32,网易云音乐
-ip-cidr,118.24.63.156/32,网易云音乐
-ip-cidr,182.92.170.253/32,网易云音乐
-ip-cidr,193.112.159.225/32,网易云音乐
-ip-cidr,223.252.199.66/32,网易云音乐
-ip-cidr,223.252.199.67/32,网易云音乐
-# Final
-final,direct
+ip-cidr, 203.107.1.1/24, reject
+ip-cidr, 183.240.197.130/32, direct
+final, 黑白名单
 
 [rewrite_local]
-#公众号少年歌行PRO提示您：这个位置用于填写您自己找到的其他未被此懒人包收录的脚本（请回车另起一行）
-#公众号少年歌行PRO提示您：关注公众号或加入交流群可以获得群友分享的各种新脚本（请回车另起一行）
 
 [task_local]
-#公众号少年歌行PRO提示您：这个位置用于填写您自己找到的其他自动化脚本定时信息（请回车另起一行）
-#公众号少年歌行PRO提示您：关注公众号或加入交流群可以获得群友分享的各种自动化脚本定时信息（请回车另起一行）
+0 0 29 2 * https://raw.githubusercontent.com/Hyseen/Scripts/master/QuantumultX/NetflixPolicySwitcher/netflix_switcher.js, tag=Neflix 策略切换, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix_Letter.png, enabled=true
+0 */2 * * * https://raw.githubusercontent.com/Hyseen/Scripts/master/QuantumultX/NetflixPolicySwitcher/netflix_checker.js, tag=Netflix 解锁检测, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix_Letter.png, enabled=true
+event-interaction https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/streaming-ui-check.js, tag=流媒体解锁查询, img-url=arrowtriangle.right.square.system, enabled=true
 
 [http_backend]
-#公众号少年歌行PRO提示您：如您不了解，请不要修改
-#已将boxjs的加载方式修改为http_backend方式，默认浏览器登录boxjs地址为127.0.0.1:9999
-#如果还想用域名方式登录boxjs，先用上面的数字ip登录boxjs，然后点击BoxJs页面最下方的 > 应用按钮(底栏) > 内置应用按钮 > 偏好设置按钮，
-#在新页面`HTTP Backend (Quantumult X)` 中填入 http://127.0.0.1:9999 并保存，就可以继续用域名方式登录boxjs了
-https://ghproxy.com/https://raw.githubusercontent.com/chavyleung/scripts/master/chavy.box.js, tag=BoxJS, path=^/, enabled=true
+https://raw.githubusercontent.com/chavyleung/scripts/master/chavy.box.js, tag=Boxjs, path=^/, enabled=true
 
 [mitm]
-#公众号少年歌行PRO提示您：需要在圈x设置中生成mitm证书并安装后，这里才会显示证书信息，有证书信息后圈x才能正常工作。
-
+hostname = www.youtube.com
+passphrase = 2901B17D
+p12 = MIILuwIBAzCCC4UGCSqGSIb3DQEHAaCCC3YEggtyMIILbjCCBccGCSqGSIb3DQEHBqCCBbgwggW0AgEAMIIFrQYJKoZIhvcNAQcBMBwGCiqGSIb3DQEMAQYwDgQI0xnQ+Eo2fx0CAggAgIIFgD6urwZ7xurkEWzg//chswQ3Y6GB8B62DznDl7cEcD9eX7R/B9+R/89f7aKhOSECxhz8sxWWwdBUbP/RdfuAWjmFnSTpBVSdoL1aEqaz6t2LrEuC+LSds0Ccsj2WP2t4uAG3E83QpN0JZz29kjqXjnfU8MChQZKjv6ulgvwCq+5Q+B/grFffvd8e6as+lVBDni2awcvkTVI5dh4KTouuMcICuL+ufbBlX8P1UMrPWrbn2D34wKDQB2boHWeDVMP9Y+d9n8/bnafU2pHN0HLZ+w2Mrmn1oJ0cIy6RvzbM04qrZf8VaP3Lm1KwldphwniMR5BwQAeOKkX53rbyECoEvIt6OeoivdbYQ2GboPGRZ5t9ESZ3Chu1QJB63y8D1clHgaLI2B+5J/2UrSKFEels+jo8N1FM/1Nr2GLJrK3gfvtj9fJNJQJRxELxwuKV479m0P9R/rlJulBy/2BYwlnkWH+ze6ScnyCDWD5CKEqO2h1ktexYQybQQjEAm4DjfO0oFt7PMfvoR+v1bWBA1kK7mM2OnufXD3T0QhX4H0uZiKMMM06VKgGBruUrKRuB+rjrC/Ev7uNpVWcgvtsEcuFvOQzRG0MfbhATVhT88mA0/py46ltrLo5WxaqyaTvQRd6xsk8fcG06RGlfw87/mFMhxi3UEBiwlBCs3c3GoDzbOfySXUgCozqu01B0jl/51V1kUpYXfpOEGO8qrEfjt8gPvHErQ0SKsmzZ6UKcE/L1iDjuMm+2VMq9RtTFveNpmQzwYXkPwY8aijLqyRa/1Ngj2O7Wtqgy6LMsZbTgpypSeUQcBOqZzThz+v1wQ4xnHlFCzuLpZ6mfN6dpvolyuUBipDToIPPnx+OfUa62c5O99bh56uxv5+JBGD66s0VvfCyh5esZR8zRsEtNl96LzZAckztR3Rola1/bJzPSoEVhRU84wjLn6vrMoQkUlnEAizcCf5FRbZzQJ2F5HOynFh56dS41Z/2Rw14AeBNsrHjoKgVNAxu4L/qN/6xIn8EDGtEL2LPaDlEWsR1t1fK1BgEI7rKahWF1Kyja+RJ8AVDFh4G57LwPN6A/GaWcL5SYoVb3rB1NI0QaP4mXxYeE+omHBdeeAP1oRj9xmeqgeZAPSVrhhHtJh2WSD5SUQLDVyQay/eQS2PxPIQfOqLHbtHcRITV6jDcVCPbLXKJTxnvjrH8dcG9bmNSgG/LhrpKwbixJFum3kIyl3V2a4uMxFvRvRw20EKJQHoSa95Q0N0LxeBMqLqnfXtd0dtKqLwyMOTUaeg1MH6Ke7oiq5S2YWKylGT/Erte8B7eTicFpQWBmt4n18SgwEtS0ykECkn75qlU+PcHYewf41RJ8BtweNyi4cxASxMhSRkbv8DXz0bWcLiFqAHFDl4tt81E3IEm75UHviKVTkoLYks+opmHoFl5o65M2G0ZnHgk0KtqilPIhKGaUl8fmmlGYaerClVNkVJohtva4hkbXlbYZ2wPkTAuFHOd9OrUNdpXjoCUArgBFMcc5GuV6+qHFqaJb8Smu0kvyNLvH68x7vGNwpUMe4TItJLf/FdXQF8iJarLPq7OL3VwTnhCUN+bNDpHbtcWcoXCdJrpQTs8EaTagehCjcWBKA5kaNLtkwD8RoFvtoag/A+4vQnpnuIfmas7SLddaLbvdvlblyTzDTq1D6AB+q0WQyhL3eEEj/e6JK2wRbb3af3KQVOTq06H2czTk4aMrRUrdtmKaKDnec7FjsU1FYas0i0FSi3I5EfArk1/zwUf6iaDA7PbEyE5bPMud9fpH45FoI7/xqHmFU+JXJ+ZsMKkSbXevuqmCF7aXQMH4Bp/gjJLW1vJJCThzavM7VkDra6PUjJTcEdSmWOE7v1K8shUTgJswggWfBgkqhkiG9w0BBwGgggWQBIIFjDCCBYgwggWEBgsqhkiG9w0BDAoBAqCCBO4wggTqMBwGCiqGSIb3DQEMAQMwDgQIe6uqwKJtsVUCAggABIIEyFEiCnjkYuEmRaB3+1THJjuue7p+OqsymOwA2LzEttzGJ9ADnCCLlBJm/T48gGAAScVtIpi45C8Wo/WV5Zw7E46iMyfCaRroRp+91UVwXcS/4RQ48r8XtRmvg/HfjekCfeGZwd7XhTPrnOr4oHsdnII8mvB1HcIXdcZg7z9B2D+XTvSaZD9ILzN7k/xNQnMWPHWH7NF6QLh2MsJwlMWBgvrJoRnprw4QWpK0ThWwSdl3Mp2Teq2Ps7RuHVyr4/pGeCZBiQebwxT9qRnjlk1FXIi1ZtnLGf/MPoGaKrX4iNtKc4JV0ag29cWlgxkU4vQFXMKbDBD6rT3SeOQ5n1LUAKXersBRJq1/SirxljKDZMcmQNGVv4lCiUc/W6crFfnSydhH7gqGRXxjv9WuwfhelJvlGYlao6jTw8CmaSA0K0WUrqq8OOxFrVaKouX8Pg3MPIWsmoLtHUhB1LV7xuAECS4+DAYUYgjj1rgOkZuGlshtMEC0gEJ8K+LFD2vWd0ZOqJAU8dfr+NUtGfQmp8mqzGbNDoNN46DCiD2qsPyDgVdOMPI4IjAN0219hQO7Opwm2trCYVX0E2QDEJpH8gvxeyNk592rOaoCOjlwSw/dqfQH3S3cP3ovrfgRjT4iS0BCQhTiJTf61yH5fEKRB1bZsVbOHdVXHuP+VkOGdslAFgYEhBQKHEFyBX+q9NwDNyjCwdn7h6tHMfB/gUFjJ4V3KsYNu7S/VYemR97iROs5jVgkNl2A2Vajs33vz2ERWgDs+ffmaZzYaoB7x8TsIJc/OtlQssgoNtEPamseyKGIMXAoMTQ5y+Z3hfVBr+Fn9YH9/tM3eQ91FJoa/1O8dX4cfgNXZrMFdtzvbhbvxu3vA19qnKvSZJJWMkWSnFTyTEPeprEdaC0tuYMb0b6VZvR2g8EfAUKQaictEEREDFTUfdWshFaW3rNv7zl9OzmVhnCo/P7drd1EE7Qr4mje+4WoVwYjV/MdAq3s6d3uKo/pFCFXGA5RxrxYk6iJzHgmS6skEdM317/ZeclzKyn1nmgM5o4N0/98xKEsIhUlQADmE6aAsIvhAxCIb7+uKFfLKLz6PcwvS5aoGAGNbCwDHyFJEE82DCIxl94EIs7enS2JcArdQtKinWfT+djaeT7Z7/aD+tETO60ULqhUTiNnJeaRrkeDydurWregpzaTdHtBkszAZLg/U6xlSfS+Ghdxr7VsTcosBz67FIWbOkdHWBe5Y6McyD2yL0cgWOyFbcNI1gzv6SH8NPQTENqsTP2xt49cHLSH0gWyJCcyutUC3aHkmddPtUh3DYUXSAou0mUd1cXXaXQyYx0LsqOsI31XzGh899g0CZNUv16GElQ6r9XTxYeZjXSVWmTSmCN4DQgdRHGKCF8jx7GeMXQ+AdRDIsBgP2quDKirIbcqyhuWqXXYaqibxNjpLxZ4fDbJP4Ofw0+WnlR45DRXPY0Tji6jGkCyVcSHKfF8FZPr+Qd9cqoQOC81/0T6PMin5UuPibOMVrpSuoWcPW0oGGZpemeAyKHSyOQJZSOTOh/zN/gNnDG0jFV6VWn3Scq3Lvr0ixwxVG2YPxLmS1KadhEqafNEjvuIufUx94UsRdr+NfNnxpMzH4uMk8hjlxey3zGBgjAjBgkqhkiG9w0BCRUxFgQUXIiwAeT/UGyMmSEpm/n96OnFVjgwWwYJKoZIhvcNAQkUMU4eTABRAHUAYQBuAHQAdQBtAHUAbAB0ACAAWAAgAEMAQQAgADkAQgA4AEYANAAwADMAOAAgACgAMgAwACAARgBlAGIAIAAyADAAMgAyACkwLTAhMAkGBSsOAwIaBQAEFHB7jBbQu0W1HHHMhLtXLneRvLTxBAgu8fPD5IUDCw==
 skip_validating_cert = true
