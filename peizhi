@@ -56,12 +56,14 @@ server=/melogin.cn/system
 server=/falogin.cn/system
 
 [policy]
-static=Netflix, direct, proxy, reject, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix.png
-static=全球加速, 香港节点, 台湾节点, 日本节点, 狮城节点, 美国节点, proxy, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png
-static=苹果服务, direct, 香港节点, 台湾节点, 美国节点, 日本节点, 狮城节点, proxy, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Apple.png
+static=🚀 节点选择, direct, proxy, reject, ♻️自动选择, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Static.png
+available=♻️自动选择, HK, [free-ss.site]www.kernels.bid, 加拿大高速, 日本2, 日本3, 西美高速(限)2, 112233, 美国高速公益节点, 西美高速(限), 日本, 俄罗斯-隧道中转, 印度 孟买-来点玛莎拉, 台湾 Hinet [原生], 德国 tuboshu.live 赞助, 新加坡 流媒体解锁, 🇺🇸[Lv.1] 美国B | 中转, 🇺🇸[Lv.1] 美国A | 直连, 🇸🇬[Lv.1] 新加坡A | 直连, 🇭🇰[Lv.1] 香港B | 直连, 香港HGC[原生], 美国 流媒体视频, 日本隧道[视频], img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final_1.png
+static=Netflix, direct, proxy, reject, 🚀 节点选择, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix.png
+static=全球加速, 香港节点, 台湾节点, 日本节点, 狮城节点, 美国节点, proxy, 🚀 节点选择, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png
+static=苹果服务, direct, 香港节点, 台湾节点, 美国节点, 日本节点, 狮城节点, proxy, ♻️自动选择, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Apple.png
 static=港台番剧, direct, 香港节点, 台湾节点, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Bili.png
-static=国际媒体, 香港节点, 台湾节点, 日本节点, 美国节点, 狮城节点, proxy, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/YouTube.png
-static=黑白名单, 全球加速, direct, 香港节点, 台湾节点, 日本节点, 狮城节点, 美国节点, proxy, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Final.png
+static=国际媒体, 香港节点, 台湾节点, 日本节点, 美国节点, 狮城节点, proxy, 🚀 节点选择, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/YouTube.png
+static=黑白名单, 全球加速, direct, 香港节点, 台湾节点, 日本节点, 狮城节点, 美国节点, proxy, 🚀 节点选择, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Final.png
 url-latency-benchmark=香港节点, server-tag-regex=(?=.*(港|HK|(?i)Hong))^((?!(台|日|韩|新|美)).)*$, check-interval=600, tolerance=0, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png
 url-latency-benchmark=台湾节点, server-tag-regex=(?=.*(台|TW|(?i)Taiwan))^((?!(港|日|韩|新|美)).)*$, check-interval=600, tolerance=0, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/TW.png
 url-latency-benchmark=日本节点, server-tag-regex=(?=.*(日|JP|(?i)Japan))^((?!(港|台|韩|新|美)).)*$, check-interval=600, tolerance=0, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png
@@ -69,10 +71,11 @@ url-latency-benchmark=狮城节点, server-tag-regex=(?=.*(新|狮|獅|SG|(?i)Si
 url-latency-benchmark=美国节点, server-tag-regex=(?=.*(美|US|(?i)States|American))^((?!(港|台|日|韩|新)).)*$, check-interval=600, tolerance=0, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
 
 [server_remote]
-https://subscribe.s7p7.top/link/C9IPrky4dbo1BHsK?list=quantumultx, tag=Tag-1645355540, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Frog.png, update-interval=172800, opt-parser=true, enabled=true
+https://freedog.buzz/link/R2y9Lz6mimVdnpw2?sub=1, tag=🐶, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Dinosaur.png, update-interval=172800, opt-parser=true, enabled=true
 https://v2.tjiasu.xyz/api/v2/client/subscribe?token=27c6e347c861047dbf9a3de8a9aeefb4, tag=T, update-interval=172800, opt-parser=false, enabled=true
 
 [filter_remote]
+https://pub-api-1.bianyuan.xyz/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvUHJveHlMaXRlLmxpc3Q&group=8J-agCDoioLngrnpgInmi6k, tag=🚀节点选择, update-interval=172800, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Netflix/Netflix.list, tag=Netflix策略, force-policy=Netflix, update-interval=172800, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Unbreak.list, tag=规则修正, force-policy=direct, update-interval=172800, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Advertising.list, tag=广告拦截, force-policy=reject, update-interval=172800, opt-parser=true, enabled=true
@@ -102,7 +105,7 @@ https://raw.githubusercontent.com/Orz-3/QuantumultX/master/Bili_Auto_Regions.con
 https://raw.githubusercontent.com/Orz-3/QuantumultX/master/JD_TB_price.conf, tag=比价脚本, update-interval=172800, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/Orz-3/QuantumultX/master/JS_GetCookie.conf, tag=Cookie, update-interval=172800, opt-parser=false, enabled=false
 https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/TestFlightDownload.conf , tag=TestFlight区域限制解除, update-interval=172800, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/Orz-3/QuantumultX/master/TikTok.conf, tag=Tiktok解锁, update-interval=172800, opt-parser=false, enabled=false
+https://raw.githubusercontent.com/Orz-3/QuantumultX/master/TikTok.conf, tag=Tiktok解锁, update-interval=172800, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/Orz-3/QuantumultX/master/Netflix_ratings.conf, tag=Netflix评分, update-interval=172800, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/General.conf, tag=神机重定向, update-interval=172800, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/Block/Advertising.conf, tag=神机去广告, update-interval=172800, opt-parser=true, enabled=true
@@ -110,6 +113,12 @@ https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/Rewrite_lhie1
 https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/Block/AdvertisingPlus.conf, tag=去广告脚本, update-interval=172800, opt-parser=false, enabled=true
 
 [server_local]
+vmess=13.75.126.219:15072, method=aes-128-gcm, password=047184b7-6da2-3d3f-ac27-6a1a8701daf8, obfs=ws, obfs-host=t.me/vpnhat, obfs-uri=/, fast-open=false, udp-relay=false, aead=false, tag=HK
+
+vmess=www.kernels.bid:443, method=aes-128-gcm, password=6c7c5e3a-73ad-467a-1241-206987daa04f, obfs=wss, obfs-uri=/ws, tls-verification=false, fast-open=false, udp-relay=false, aead=true, tag=[free-ss.site]www.kernels.bid
+
+vmess=8.ezydfdd.com:443, method=aes-128-gcm, password=dc0887b8-4c05-428c-adce-4235d1636341, obfs=wss, obfs-host=8.ezydfdd.com, obfs-uri=/qwe, tls-verification=false, fast-open=false, udp-relay=false, aead=true, tag=加拿大高速
+
 vmess=4.ezydfdd.com:443, method=aes-128-gcm, password=2fc1ae9d-6253-4921-cc6d-1a5312626e8b, obfs=wss, obfs-host=4.ezydfdd.com, obfs-uri=/qwe, tls-verification=false, fast-open=false, udp-relay=false, aead=true, tag=日本2
 
 vmess=5.ezydfdd.com:443, method=aes-128-gcm, password=89fefb2d-c4a6-45be-fe1e-11bd949f91b7, obfs=wss, obfs-host=5.ezydfdd.com, obfs-uri=/qwe, tls-verification=false, fast-open=false, udp-relay=false, aead=true, tag=日本3
