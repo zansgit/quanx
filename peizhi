@@ -59,7 +59,7 @@ server=/falogin.cn/system
 [policy]
 url-latency-benchmark=♻️ 自动选择, server-tag-regex=.*, check-interval=600, tolerance=100, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Auto.png
 static=🚀 节点选择, direct, proxy, reject, 狮城节点, 美国节点, 日本节点, 香港节点, 台湾节点, ♻️ 自动选择, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Static.png
-static=Netflix, direct, proxy, reject, 🚀 节点选择, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix.png
+static=Netflix, direct, proxy, reject, 🚀 节点选择, 狮城节点, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix.png
 static=全球加速, 香港节点, 台湾节点, 日本节点, 狮城节点, 美国节点, proxy, 🚀 节点选择, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png
 static=苹果服务, direct, 香港节点, 台湾节点, 美国节点, 日本节点, 狮城节点, proxy, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Apple.png
 static=港台番剧, direct, 香港节点, 台湾节点, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Bili.png
@@ -72,10 +72,8 @@ url-latency-benchmark=狮城节点, server-tag-regex=(?=.*(新|狮|獅|SG|(?i)Si
 url-latency-benchmark=美国节点, server-tag-regex=(?=.*(美|US|(?i)States|American))^((?!(港|台|日|韩|新)).)*$, check-interval=600, tolerance=0, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
 
 [server_remote]
-https://sub.sdncimcin.xyz/link/JIr47JsQxtxB9Dcr?list=quantumultx, tag=即刻, update-interval=172800, opt-parser=false, enabled=true
-https://sub.id9.cc/sub?target=clash&url=https%3A%2F%2Fwp.bbq520.cc%2Fapi%2Fv3%2Ffile%2Fget%2F38%2F%25E8%25AE%25A2%25E9%2598%2585%25E6%2596%2587%25E4%25BB%25B6.txt%3Fsign%3Dc2FMgg9roqJorxDLiVt2fSXTcDRk6uvvhMF6YriMiAk%253D%253A0&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online.ini, tag=xly, update-interval=172800, opt-parser=true, enabled=true
-https://subscribe.s7p7.top/link/WTKlODlUbI7InfYg?list=quantumultx, tag=🐸, update-interval=172800, opt-parser=true, enabled=true
-https://freedog.buzz/link/R2y9Lz6mimVdnpw2?sub=3, tag=🐶, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Dinosaur.png, update-interval=172800, opt-parser=true, enabled=true
+https://e.luxury/link/gsDzZBZRWWwZvZsW?list=quantumultx, tag=naifei, update-interval=172800, opt-parser=true, enabled=true
+https://www.naiun.co/api/v1/client/subscribe?token=76e638e10e3428da46b2e92d1f6004e9, tag=奈云, update-interval=172800, opt-parser=false, enabled=true
 
 [filter_remote]
 https://pub-api-1.bianyuan.xyz/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvUHJveHlMaXRlLmxpc3Q&group=8J-agCDoioLngrnpgInmi6k, tag=🚀节点选择, update-interval=172800, opt-parser=false, enabled=true
